@@ -7,11 +7,22 @@
                 </a>
                 <nav class="foo-nav">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">feature</a></li>
-                        <li><a href="#">service</a></li>
-                        <li><a href="#">Contact</a></li>
+
+                        <li>
+                            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#over-de-spa">Over de spa</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#behandelingen">Behandelingen</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#tarieven">Tarieven</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
                     </ul>
                 </nav>
                 <div class="foo-social">

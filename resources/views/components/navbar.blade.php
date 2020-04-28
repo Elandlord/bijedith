@@ -35,19 +35,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Over de spa</a>
+                    <a class="nav-link" href="#over-de-spa">Over de spa</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Behandelingen</a>
+                    <a class="nav-link" href="#behandelingen">Behandelingen</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Tarieven</a>
+                    <a class="nav-link" href="#tarieven">Tarieven</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
 {{--                <li class="nav-item dropdown">--}}
 {{--                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">--}}

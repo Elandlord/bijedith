@@ -1,5 +1,5 @@
 <template>
-    <carousel :items="items" :autoplay="autoplay" :nav="nav">
+    <carousel :items="items" :autoplay="autoplay" :nav="nav" v-if="items != null">
         <div class="single-service">
             <img src="/assets/images/service/spa.png" class="object-cover service-card" style="" alt="" />
             <div class="service-hover">
@@ -28,6 +28,23 @@
                 <span>Behandeling 4</span>
             </div>
         </div>
+
+
+        <div class="single-service">
+            <img src="/assets/images/service/spa3.jpg" class="object-cover service-card" alt="" />
+            <div class="service-hover">
+                <img src="/assets/images/icons/1.png" alt="" />
+                <span>Behandeling 5</span>
+            </div>
+        </div>
+
+        <div class="single-service">
+            <img src="/assets/images/service/spa2.jpg" class="object-cover service-card" alt="" />
+            <div class="service-hover">
+                <img src="/assets/images/icons/1.png" alt="" />
+                <span>Behandeling 6</span>
+            </div>
+        </div>
     </carousel>
 </template>
 <script>
@@ -38,9 +55,39 @@
 
         data() {
             return {
-                items: 3,
+                items: null,
                 autoplay: true,
                 nav: false,
+                width: null,
+            }
+        },
+
+        mounted() {
+            this.width = $(window).width();
+            this.getScreenWidth();
+        },
+
+        methods: {
+            getScreenWidth() {
+                if(this.width <= 600) {
+                    this.items = 1;
+                    return;
+                }
+
+                if(this.width <= 900) {
+                    this.items = 2;
+                    return;
+                }
+
+                if(this.width <= 1200) {
+                    this.items = 3;
+                    return;
+                }
+
+                if(this.width > 1200) {
+                    this.items = 4;
+                    return;
+                }
             }
         }
     }

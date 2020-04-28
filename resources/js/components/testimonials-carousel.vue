@@ -4,7 +4,7 @@
             <img src="/assets/images/quote.png" style="width: 40px;" alt="" />
             <p>Ik werd zeer gastvrij ontvangen in een mooie, verzorgde spa.</p>
             <div class="client-info">
-                <img src="assets/images/client-1.png" alt="" class="thumb" />
+                <img src="/assets/images/person_1.jpg" alt="" class="thumb" />
                 <p>Eric Landheer, <span>software-ontwikkelaar</span></p>
             </div>
         </div>

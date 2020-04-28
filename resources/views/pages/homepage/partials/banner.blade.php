@@ -1,4 +1,4 @@
-<section class="banner">
+<section class="banner" id="home">
     <div class="spa-img">
         <img src='/assets/images/service/spa.png' />
     </div>
@@ -9,7 +9,7 @@
                     <span>Pedicure & Spa</span>
                     <h2>Verzorgend en ontspannend</h2>
                     <p>Bij Edith verzorgen wij verschillende schoonheidsbehandelingen. Naast pedicures zijn wij compleet uitgerust met spabehandelingen. Zien wat wij allemaal bieden?</p>
-                    <a href="#" class="btn">Bekijk onze behandelingen</a>
+                    <a href="#behandelingen" class="btn">Bekijk onze behandelingen</a>
                 </div>
             </div>
         </div>

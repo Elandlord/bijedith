@@ -1,4 +1,4 @@
-<section class="procedures">
+<section class="procedures" id="behandelingen">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-10 m-auto">
@@ -16,7 +16,7 @@
                         <img src="{{ $procedure->img }}" class="object-cover" style="height: 200px; max-height: 200px;" alt="" />
                         <h4><a href="">{{ $procedure->name }}</a></h4>
                         <p>{{ $procedure->description }}</p>
-                        <a href="" class="btn btn-round">Bekijk tarieven</a>
+                        <a href="#tarieven" class="btn btn-round">Bekijk tarieven</a>
                     </article>
                 </div>
             @empty

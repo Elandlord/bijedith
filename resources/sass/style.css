@@ -85,7 +85,7 @@ section {
  *  Common CSS
  */
 .bg-lightred {
-    background-color: rgba(40%, 72%, 82%, 0.4);
+    background-color: rgba(77%, 89%, 93%, 0.5);
 }
 
 .btn {
@@ -1021,7 +1021,7 @@ section {
 }
 
 .footer {
-    background-color: #fff9f8;
+    background-color: #ebfaff;
     padding: 80px 0 60px;
 }
 

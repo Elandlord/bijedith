@@ -14,5 +14,27 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('pages.homepage.index');
+    $procedures = collect([
+        0 => [
+            'img'           => '/assets/images/service/spa2.jpg',
+            'name'          => 'Pedicure',
+            'description'   => 'Een pedicure of voetverzorging is een behandeling van de voeten.'
+        ],
+        1 => [
+            'img'           => '/assets/images/service/spa3.jpg',
+            'name'          => 'Manicure',
+            'description'   => 'Een manicure of handverzorging is een behandeling van de handen.'
+        ],
+        2 => [
+            'img'           => '/assets/images/service/spa4.jpg',
+            'name'          => 'Spabehandeling',
+            'description'   => 'Met een spabehandeling komt u helemaal tot rust.'
+        ],
+    ]);
+
+    return view('pages.homepage.index', compact('procedures'));
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

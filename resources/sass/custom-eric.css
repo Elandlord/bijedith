@@ -1,0 +1,9 @@
+.object-cover {
+    object-fit: cover;
+}
+
+.service-card {
+    width: 100%;
+    height: 400px;
+    max-height: 400px;
+}

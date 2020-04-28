@@ -131,11 +131,11 @@ section {
  *  Common CSS
  */
 .bg-lightred {
-    background-color: #fff9f8;
+    background-color: rgba(40%, 72%, 82%, 0.4);
 }
 
 .btn {
-    background-color: #ff817e;
+    background-color: #66B7D0;
     border-radius: 0;
     color: #fff;
     display: inline-block;
@@ -173,13 +173,13 @@ section {
 }
 
 .video-btn:hover {
-    color: #ff817e;
+    color: #66B7D0;
 }
 
 .video-btn i {
     border-radius: 50%;
     background-color: #fcf5ee;
-    color: #ff817e;
+    color: #66B7D0;
     display: inline-block;
     line-height: 44px;
     text-align: center;
@@ -241,7 +241,7 @@ section {
 
 .logo {
     display: block;
-    max-width: 200px;
+    max-width: 140px;
 }
 
 .primary-menu, .footer .foo-nav {
@@ -289,7 +289,7 @@ section {
 }
 
 .primary-menu li a:hover, .footer .foo-nav li a:hover {
-    color: #ff817e;
+    color: #66B7D0;
 }
 
 @media screen and (max-width: 767px) {
@@ -335,7 +335,7 @@ section {
 }
 
 .banner span {
-    color: #ff817e;
+    color: #10629A;
     display: block;
     font-family: "Rufina", serif;
     letter-spacing: 1.5px;
@@ -437,7 +437,7 @@ section {
 }
 
 .service .single-service .service-hover {
-    background-color: rgba(255, 129, 126, 0.9);
+    background-color: rgba(102, 183, 208, 0.9);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -514,7 +514,7 @@ section {
 }
 
 .post:hover .btn {
-    background-color: #ff817e;
+    background-color: #66B7D0;
     color: #fff;
 }
 
@@ -1288,6 +1288,16 @@ section {
 
 .error h2 {
     margin-bottom: 30px;
+}
+.object-cover {
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.service-card {
+    width: 100%;
+    height: 400px;
+    max-height: 400px;
 }
 /*@font-face {*/
 /*    font-family: 'themify';*/

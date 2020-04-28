@@ -3,22 +3,24 @@
         <div class="row">
             <div class="col-lg-8 col-md-10 m-auto">
                 <div class="sec-heading">
-                    <h3 class="sec-title">Popular Procedures</h3>
-                    <p>To doesn't his appear replenish together called he of mad place won't wherein blessed second every wherein were meat kind wherein and martcin</p>
+                    <h3 class="sec-title">Populaire behandelingen</h3>
+                    <p>Hieronder ziet u een aantal van onze populaire behandelingen.</p>
                 </div>
             </div>
         </div>
         <div class="row">
-            @for($i = 1; $i <= 3; $i++)
+            @forelse($procedures as $procedure)
+                @php $procedure = (object) $procedure; @endphp
                 <div class="col-md-4">
                     <article class="post">
-                        <img src="assets/images/post/1.jpg" alt="" />
-                        <h4><a href="">Test</a></h4>
-                        <p>Test</p>
-                        <a href="" class="btn btn-round">read more</a>
+                        <img src="{{ $procedure->img }}" class="object-cover" style="height: 200px; max-height: 200px;" alt="" />
+                        <h4><a href="">{{ $procedure->name }}</a></h4>
+                        <p>{{ $procedure->description }}</p>
+                        <a href="" class="btn btn-round">Bekijk tarieven</a>
                     </article>
                 </div>
-            @endfor
+            @empty
+            @endforelse
         </div>
     </div>
 </section>

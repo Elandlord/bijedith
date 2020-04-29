@@ -25,12 +25,12 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="foo-social">
-                    <a href="#"><i class="ti-facebook"></i></a>
-                    <a href="#"><i class="ti-twitter-alt"></i></a>
-                    <a href="#"><i class="ti-vimeo-alt"></i></a>
-                    <a href="#"><i class="ti-instagram"></i></a>
-                </div>
+{{--                <div class="foo-social">--}}
+{{--                    <a href="#"><i class="ti-facebook"></i></a>--}}
+{{--                    <a href="#"><i class="ti-twitter-alt"></i></a>--}}
+{{--                    <a href="#"><i class="ti-vimeo-alt"></i></a>--}}
+{{--                    <a href="#"><i class="ti-instagram"></i></a>--}}
+{{--                </div>--}}
                 <p class="copyright">&copy; {{ Date('Y') }} Edith Groothuis</p>
             </div>
         </div>

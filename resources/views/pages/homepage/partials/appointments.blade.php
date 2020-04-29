@@ -12,8 +12,10 @@
                 <div class="form-field half-width">
                     <div class="select-field">
                         <select>
-                            <option>Selecteer service</option>
-                            <option>Select service 1</option>
+                            <option value="" disabled selected>Selecteer behandeling</option>
+                            <option>Pedicure</option>
+                            <option>Manicure</option>
+                            <option>Spabehandeling</option>
                         </select>
                     </div>
                     <input type="tel" placeholder="Telefoonnummer" />

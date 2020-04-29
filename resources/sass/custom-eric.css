@@ -8,6 +8,10 @@
     max-height: 400px;
 }
 
+* {
+    -webkit-overflow-scrolling: touch;
+}
+
 html {
     scroll-behavior: smooth;
 }

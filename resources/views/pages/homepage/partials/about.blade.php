@@ -11,7 +11,7 @@
                     <h3 class="sec-title">Bij Edith</h3>
                     <p>Edith is na jarenlange ervaring met schoonheidsbehandelingen voor haarzelf begonnen. In een nieuwe spa-aan-huis kunt u ontspannen en zorgeloos genieten van schoonheidsbehandelingen.</p>
                 </div>
-                <a href="#tarieven" class="btn btn-round">Bekijk de tarieven</a>
+                <a href="#behandelingen" class="btn btn-round">Bekijk de behandelingen</a>
             </div>
         </div>
     </div>

@@ -6,28 +6,24 @@
         <div class="appointment-form">
             <form action="#">
                 <div class="form-field half-width">
-                    <input type="text" placeholder="Naam" required />
-                    <input type="email" placeholder="E-mailadres" required />
+                    <input type="text" name="name" placeholder="Naam" required />
+                    <input type="email" name="email" placeholder="E-mailadres" required />
                 </div>
                 <div class="form-field half-width">
-                    <div class="select-field">
+                    <div class="select-field" name="procedure">
                         <select>
                             <option value="" disabled selected>Selecteer behandeling</option>
-                            <option>Pedicure</option>
-                            <option>Manicure</option>
-                            <option>Spabehandeling</option>
+                            <option value="pedicure">Pedicure</option>
+                            <option value="manicure">Manicure</option>
+                            <option value="spabehandeling">Spabehandeling</option>
                         </select>
                     </div>
-                    <input type="tel" placeholder="Telefoonnummer" />
-                </div>
-                <div class="form-field half-width">
-                    <input type="date" placeholder="Datum" />
-                    <input type="time" placeholder="Tijdstip" />
+                    <input type="tel" name="phone" placeholder="Telefoonnummer" />
                 </div>
                 <div class="form-field">
                     <textarea name="notes" placeholder="Opmerking"></textarea>
                 </div>
-                <button class="btn btn-round">Informeer naar beschikbaarheid</button>
+                <button class="btn btn-round">Versturen</button>
             </form>
         </div>
     </div>

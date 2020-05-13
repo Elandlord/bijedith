@@ -1,10 +1,10 @@
 <template>
     <carousel :items="items" :autoplay="autoplay" :nav="nav">
         <div class="single-tst" v-for="n in 3">
-            <img src="/assets/images/quote.png" style="width: 40px;" alt="" />
+            <img data-src="/assets/images/quote.png" class="lazyload" style="width: 40px;" alt="" />
             <p>Ik werd zeer gastvrij ontvangen in een mooie, verzorgde spa.</p>
             <div class="client-info">
-                <img src="/assets/images/person_1.jpg" alt="" class="thumb" />
+                <img data-src="/assets/images/person_1.jpg" alt="" class="thumb lazyload" />
                 <p>Eric Landheer, <span>software-ontwikkelaar</span></p>
             </div>
         </div>

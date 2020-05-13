@@ -1,6 +1,6 @@
 <section class="banner" id="home">
     <div class="spa-img">
-        <img src='/assets/images/service/spa.png' />
+        <img class="lazyload" data-src='/assets/images/service/spa.png' />
     </div>
     <div class="container">
         <div class="row">

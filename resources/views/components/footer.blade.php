@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12 text-center">
                 <a href="index.html" class="logo foo-logo">
-                    <img src="/assets/images/bij_edith_logo.png" alt="" />
+                    <img data-src="/assets/images/bij_edith_logo.png" class="lazyload" alt="" />
                 </a>
                 <nav class="foo-nav">
                     <ul>

@@ -1,6 +1,6 @@
 <section class="about" id="over-de-spa">
-    <img src="/assets/images/china-rose.png" class="flower-1"/>
-    <img src="/assets/images/jasmine.png" class="flower-2"/>
+    <img data-src="/assets/images/china-rose.png" class="flower-1 lazyload"/>
+    <img data-src="/assets/images/jasmine.png" class="flower-2 lazyload"/>
 
     <div class="container">
         <div class="row">

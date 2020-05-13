@@ -11,7 +11,7 @@
         <div class="row justify-content-center">
             <div class="col-md-4">
                 <div class="single-memb">
-                    <img src="/assets/images/person_1.jpg" alt="" />
+                    <img data-src="/assets/images/person_1.jpg" class="lazyload" alt="" />
                     <div class="memb-details">
                         <h6>Edith Groothuis</h6>
                         <span>Schoonheidsspecialiste</span>

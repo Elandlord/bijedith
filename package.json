@@ -24,6 +24,7 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
+        "lazysizes": "^5.2.0",
         "vue-owl-carousel2": "^2.0.7"
     }
 }

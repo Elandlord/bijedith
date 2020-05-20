@@ -16,17 +16,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $procedures = collect([
         0 => [
-            'img'           => '/assets/images/service/spa2.jpg',
+            'img'           => '/assets/images/service/spa2.png',
             'name'          => 'Pedicure',
             'description'   => 'Een pedicure of voetverzorging is een behandeling van de voeten.'
         ],
         1 => [
-            'img'           => '/assets/images/service/spa3.jpg',
+            'img'           => '/assets/images/service/spa3.png',
             'name'          => 'Manicure',
             'description'   => 'Een manicure of handverzorging is een behandeling van de handen.'
         ],
         2 => [
-            'img'           => '/assets/images/service/spa4.jpg',
+            'img'           => '/assets/images/service/spa4.png',
             'name'          => 'Spabehandeling',
             'description'   => 'Met een spabehandeling komt u helemaal tot rust.'
         ],

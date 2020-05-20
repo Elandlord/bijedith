@@ -1,7 +1,7 @@
 <section class="appointment" id="contact">
     <div class="appointment-wrap">
         <figure>
-            <img class="lazyload" data-src="/assets/images/service/spa4.jpg" alt="" />
+            <img class="lazyload" data-src="/assets/images/service/spa4.png" alt="" />
         </figure>
         <div class="appointment-form">
             <form action="#">

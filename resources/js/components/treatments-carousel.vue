@@ -3,26 +3,26 @@
         <div class="single-service">
             <img data-src="/assets/images/service/spa.png" class="object-cover service-card lazyload" style="" alt="" />
             <div class="service-hover">
-                <img class="lazyload" data-src="/assets/images/icons/1.png" alt="" />
+                <img data-src="/assets/images/icons/1.png" class="lazyload" alt="" />
                 <span>Behandeling 1</span>
             </div>
         </div>
         <div class="single-service">
-            <img data-src="/assets/images/service/spa2.jpg" class="object-cover service-card lazyload" alt="" />
+            <img data-src="/assets/images/service/spa2.png" class="object-cover service-card lazyload" alt="" />
             <div class="service-hover">
                 <img data-src="/assets/images/icons/1.png" class="lazyload" alt="" />
                 <span>Behandeling 2</span>
             </div>
         </div>
         <div class="single-service">
-            <img data-src="/assets/images/service/spa3.jpg" class="object-cover service-card lazyload" alt="" />
+            <img data-src="/assets/images/service/spa3.png" class="object-cover service-card lazyload" alt="" />
             <div class="service-hover">
                 <img data-src="/assets/images/icons/1.png" class="lazyload" alt="" />
                 <span>Behandeling 3</span>
             </div>
         </div>
         <div class="single-service">
-            <img data-src="/assets/images/service/spa4.jpg" class="object-cover service-card lazyload" alt="" />
+            <img data-src="/assets/images/service/spa4.png" class="object-cover service-card lazyload" alt="" />
             <div class="service-hover">
                 <img data-src="/assets/images/icons/1.png" class="lazyload" alt="" />
                 <span>Behandeling 4</span>
@@ -31,7 +31,7 @@
 
 
         <div class="single-service">
-            <img data-src="/assets/images/service/spa3.jpg" class="object-cover service-card lazyload" alt="" />
+            <img data-src="/assets/images/service/spa3.png" class="object-cover service-card lazyload" alt="" />
             <div class="service-hover">
                 <img data-src="/assets/images/icons/1.png" class="lazyload" alt="" />
                 <span>Behandeling 5</span>
@@ -39,7 +39,7 @@
         </div>
 
         <div class="single-service">
-            <img data-src="/assets/images/service/spa2.jpg" class="object-cover service-card lazyload" alt="" />
+            <img data-src="/assets/images/service/spa2.png" class="object-cover service-card lazyload" alt="" />
             <div class="service-hover">
                 <img data-src="/assets/images/icons/1.png" class="lazyload" alt="" />
                 <span>Behandeling 6</span>

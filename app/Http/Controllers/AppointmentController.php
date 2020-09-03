@@ -21,6 +21,7 @@ class AppointmentController extends Controller
         );
 
         Mail::to($request->input('email'))->send($mail);
+        Mail::to('info@bijedith.nl')->send($mail);
 
         return redirect('/')->with('success', 'Contactaanvraag is succesvol verzonden!');
     }

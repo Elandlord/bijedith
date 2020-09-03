@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\AppointmentController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,27 +15,70 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $procedures = collect([
+    $pedicureprocedures = collect([
         0 => [
             'img'           => '/assets/pictures/DCM_9982-pichi.png',
-            'name'          => 'Pedicure',
-            'description'   => 'Een pedicure of voetverzorging is een behandeling van de voeten.'
+            'name'          => 'Pedicurebehandeling',
+            'description'   => '
+            <ul>
+                <li>Wassen en desinfecteren van de voeten voor optimale hygiëne</li>
+                <li>Knippen van de nagels</li>
+                <li>De verzorging van de nagels en de nagelomgeving</li>
+                <li>Het verwijderen van overtollig eelt</li>
+                <li>Het verwijderen van likdoorns</li>
+                <li>De behandeling van kloven</li>
+                <li>De behandeling van schimmelnagels en ingroeiende nagels</li>
+                <li>Verzorgen van de voeten met voedende crème</li>
+            </ul>',
+            'url' => '/#tarieven',
         ],
         1 => [
             'img'           => '/assets/pictures/DCM_0020-pichi.png',
-            'name'          => 'Manicure',
-            'description'   => 'Een manicure of handverzorging is een behandeling van de handen.'
-        ],
-        2 => [
-            'img'           => '/assets/pictures/DF2_2060-pichi.png',
-            'name'          => 'Spabehandeling',
-            'description'   => 'Met een spabehandeling komt u helemaal tot rust.'
+            'name'          => 'Gespecialiseerde pedicurebehandeling',
+            'description'   => 'Mensen kunnen door hun ziektegeschiedenis een verhoogd risico hebben op voetproblemen.<br/><br/>
+
+Voorkomen, op tijd signaleren en behandelen van voetproblemen is belangrijk voor de mobiliteit en kwaliteit van het leven.<br/><br/>
+
+Waar nodig wordt door Edith als medisch Pedicure samenwerking gezocht met andere disciplines, zoals huisarts, de podotherapeut, fysiotherapeut of orthopedisch schoenmaker.',
+            'url' => '/#tarieven'
         ],
     ]);
 
-    return view('pages.homepage.index', compact('procedures'));
+    $spaprocedures = collect([
+        0 => [
+            'img'           => '/assets/pictures/DCM_9982-pichi.png',
+            'name'          => 'Klassieke Voet- en onderbeen massage',
+            'description'   => 'Deze stevige massage van ongeveer 30 minuten zorgt ervoor dat uw spieren in onderbeen en voeten weer soepel aanvoelen.<br/><br/>
+Massage geeft nieuwe energie, rust en ontspanning.'
+        ],
+        1 => [
+            'img'           => '/assets/pictures/DCM_0020-pichi.png',
+            'name'          => 'Sparkling-arrangement',
+            'description'   => 'Een luxe verwenbehandeling samen met een uitverkorene (zus, vriendin, moeder of dochter).<br/><br/>
+Koffie/thee/drankje en lekkernijen horen hier natuurlijk bij!'
+        ],
+        2 => [
+            'img'           => '/assets/pictures/DF2_2060-pichi.png',
+            'name'          => 'In overleg mogelijk',
+            'description'   => '<ul>
+            <li>Voetbad met Hydro massage</li>
+            <li>Scrub-behandeling</li>
+            <li>Nagelverzorging</li>
+            <li>Voetmassage</li>
+            <li>Nagels lakken</li>
+</ul>'
+        ],
+    ]);
+
+    return view('pages.homepage.index', compact('spaprocedures', 'pedicureprocedures'));
 });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('privacyverklaring', function() {
+    return redirect()->to('/assets/documents/privacyverklaring.pdf');
+})->name('privacy');
+
+Route::post('/mail/appointment', [AppointmentController::class, 'index'])
+    ->middleware(\Spatie\Honeypot\ProtectAgainstSpam::class)
+    ->name('mail.appointment');

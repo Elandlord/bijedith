@@ -1,15 +1,34 @@
 <section class="banner" id="home">
-    <div class="spa-img">
-        <img class="lazyload" data-src='/assets/pictures/DCM_9903-filter.png' />
-    </div>
     <div class="container">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-7">
                 <div class="banner-content">
                     <span>Pedicure & Spa</span>
-                    <h2>Verzorgend en ontspannend</h2>
-                    <p>Bij Edith verzorgen wij verschillende schoonheidsbehandelingen. Naast pedicures zijn wij compleet uitgerust met spabehandelingen. Zien wat wij allemaal bieden?</p>
-                    <a href="#behandelingen" class="btn">Bekijk onze behandelingen</a>
+                    <h2>Welkom bij Edith…..</h2>
+                    <p>Mijn naam is Edith Groothuis. Al meer dan 20 jaar ben ik werkzaam als ambulant pedicure en
+                        heb daarin een schat aan ervaring en een mooie klantenkring opgebouwd.<br/><br/>
+
+                        Mijn wens om, na al die “reizende ”jaren, toch een eigen pedicuresalon aan huis in te richten
+                        is nu uitgekomen. Het is een fijne werkplek geworden.<br/><br/>
+
+                        Voor allround pedicurebehandelingen, gespecialiseerde voetzorg of pure ontspanning met
+                        een Spa-arrangement ben je dan ook van harte welkom in mijn nieuwe salon “Bij Edith”.<br/><br/>
+
+                        Bij Edith kun je altijd rekenen op kwaliteit, hygiëne en vakkundige voetzorg in een prettige
+                        informele sfeer.<br/><br/>
+
+                        Bel gerust voor een afspraak of stuur een mailtje.<br/><br/>
+
+                        Graag tot ziens.<br/><br/>
+
+                        Edith Groothuis</p>
+                    <a href="#pedicurebehandelingen" class="btn">Bekijk onze behandelingen</a>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="spa-img" style="margin-top: 50%;">
+                    {{--        <img class="lazyload" data-src='/assets/pictures/DCM_9903-filter.png' />--}}
+                    <img class="lazyload" data-src='/assets/images/bij_edith_logo.png' style="max-width: 350px;" />
                 </div>
             </div>
         </div>

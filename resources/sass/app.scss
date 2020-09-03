@@ -3,3 +3,7 @@
 @import "style.css";
 @import "custom-eric.css";
 @import "themify-icons.css";
+
+/* purgecss start ignore */
+@import "./imports/toastr.scss";
+/* purgecss end ignore */

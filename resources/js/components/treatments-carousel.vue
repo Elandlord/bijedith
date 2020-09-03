@@ -4,28 +4,28 @@
             <img data-src="/assets/pictures/DCM_9932-pichi.png" class="object-cover service-card lazyload" style="" alt="" />
             <div class="service-hover">
                 <img data-src="/assets/images/icons/1.png" class="lazyload" alt="" />
-                <span>Behandeling 1</span>
+                <span>Pedicure</span>
             </div>
         </div>
         <div class="single-service">
             <img data-src="/assets/pictures/DCM_9962-pichi.png" class="object-cover service-card lazyload" alt="" />
             <div class="service-hover">
                 <img data-src="/assets/images/icons/1.png" class="lazyload" alt="" />
-                <span>Behandeling 2</span>
+                <span>Pedicure</span>
             </div>
         </div>
         <div class="single-service">
             <img data-src="/assets/pictures/DF2_2043-3-pichi.png" class="object-cover service-card lazyload" alt="" />
             <div class="service-hover">
                 <img data-src="/assets/images/icons/1.png" class="lazyload" alt="" />
-                <span>Behandeling 3</span>
+                <span>Pedicure</span>
             </div>
         </div>
         <div class="single-service">
             <img data-src="/assets/pictures/DF2_2051-pichi.png" class="object-cover service-card lazyload" alt="" />
             <div class="service-hover">
                 <img data-src="/assets/images/icons/1.png" class="lazyload" alt="" />
-                <span>Behandeling 4</span>
+                <span>Pedicure</span>
             </div>
         </div>
 

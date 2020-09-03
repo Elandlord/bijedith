@@ -38,10 +38,10 @@
                     <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#over-de-spa">Over de spa</a>
+                    <a class="nav-link" href="#pedicurebehandelingen">Pedicurebehandelingen</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#behandelingen">Behandelingen</a>
+                    <a class="nav-link" href="#spa-arrangementen">Spa-arrangementen</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#tarieven">Tarieven</a>

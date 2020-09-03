@@ -11,8 +11,14 @@
     <link rel="stylesheet" type="text/css" href="{{ mix('/css/app.css') }}">
 </head>
 <body>
-@include('components.navbar')
 <div id="app">
+@if (\Session::has('success'))
+    @include('components.project.messages.alert', [
+        'message' => \Session::get('success'),
+        'title'   => 'Gelukt!',
+    ])
+@endif
+@include('components.navbar')
     @yield('content')
 </div>
 @include('components.footer')

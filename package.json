@@ -25,6 +25,7 @@
     },
     "dependencies": {
         "lazysizes": "^5.2.2",
+        "toastr": "^2.1.4",
         "vue-owl-carousel2": "^2.0.7"
     }
 }

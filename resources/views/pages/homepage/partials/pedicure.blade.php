@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-lg-8 col-md-10 m-auto">
                 <div class="sec-heading">
-                    <h3 class="sec-title">Pedicurebehandelingen</h3>
+                    <h3 class="sec-title" style="word-wrap: break-word">Pedicurebehandelingen</h3>
                     <p>Hieronder ziet u een aantal van onze pedicurebehandelingen.</p>
                 </div>
             </div>
@@ -28,7 +28,7 @@
             @endforelse
         </div>
         <div class="row">
-            <div class="col-lg-8 col-md-10">
+            <div class="col-lg-12 col-md-12">
                 <div class="sec-heading text-left">
                     <h3 class="sec-title text-left">Algemene adviezen</h3>
                     <ul style="	list-style-type: disc;">
@@ -37,8 +37,7 @@
                         <li>Knip de nagels recht af</li>
                         <li>Smeer de voeten goed in, maar niet tussen de tenen, zodat de huid niet uitdroogt</li>
                         <li>Draag schone katoenen sokken (zonder dikke naden) die niet knellen</li>
-                        <li>Zorg voor goed passende schoenen van natuurlijk materiaal, dit vermindert de kans op</li>
-                        <li>blaren, likdoorns en eeltplekken</li>
+                        <li>Zorg voor goed passende schoenen van natuurlijk materiaal, dit vermindert de kans op blaren, likdoorns en eeltplekken</li>
                         <li>Controleer de binnenkant van uw schoenen op oneffenheden</li>
                         <li>Wissel indien mogelijk dagelijks je schoenen</li>
                         <li>Pak voldoende beweging, voetgymnastiek stimuleert de doorbloeding</li>
@@ -47,12 +46,11 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-8 col-md-10">
+            <div class="col-lg-12 col-md-12">
                 <div class="sec-heading text-left">
                     <h3 class="sec-title text-left">Advies bij aankoop schoenen</h3>
                     <ul style="	list-style-type: disc;">
-                        <li>Koop nieuwe schoenen altijd in de namiddag voor een betere pasvorm. In de loop van de</li>
-                        <li>dag kunnen voeten opzwellen</li>
+                        <li>Koop nieuwe schoenen altijd in de namiddag voor een betere pasvorm. In de loop van de dag kunnen voeten opzwellen</li>
                         <li>Laat de maat van uw voeten regelmatig opmeten</li>
                         <li>Een schoen moet direct prettig zitten, neem ook aangemeten zolen mee.</li>
                         <li>Let op stiksels en naden ter hoogte van de voorvoet, ze kunnen drukplekken geven</li>

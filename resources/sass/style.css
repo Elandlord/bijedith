@@ -25,7 +25,7 @@ body {
     background-color: #fff;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 27px;
 }
 
@@ -123,7 +123,7 @@ section {
 
 .video-btn {
     color: #555;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
 }
 
@@ -157,7 +157,7 @@ section {
 .sec-heading .tagline {
     color: #888;
     display: block;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 400;
     line-height: .8;
     text-transform: uppercase;
@@ -166,13 +166,13 @@ section {
 
 .sec-heading .sec-title {
     color: #1e2528;
-    font-size: 42px;
+    font-size: 44px;
     margin-bottom: 32px;
 }
 
 @media screen and (max-width: 767px) {
     .sec-heading .sec-title {
-        font-size: 33px;
+        font-size: 35px;
     }
 }
 
@@ -230,7 +230,7 @@ section {
 .primary-menu li a, .footer .foo-nav li a {
     color: #263a41;
     display: block;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 500;
     text-transform: uppercase;
     padding: 0 20px;
@@ -238,7 +238,7 @@ section {
 
 @media screen and (max-width: 991px) {
     .primary-menu li a {
-        font-size: 13px;
+        font-size: 14px;
         padding: 0 18px;
     }
 }

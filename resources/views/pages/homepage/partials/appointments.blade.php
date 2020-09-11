@@ -1,7 +1,7 @@
 <section class="appointment" id="contact">
     <div class="appointment-wrap">
         <figure>
-            <img class="lazyload" data-src="/assets/pictures/DCM_0010-pichi.png" alt="" />
+            <img class="lazyload" data-src="/assets/pictures/DCM_0020-pichi.png" alt="" />
         </figure>
         <div class="appointment-form">
             <form method="POST" action="{{ route('mail.appointment') }}">
@@ -31,6 +31,9 @@
                     </div>
                 </div>
                 <input type="submit" class="btn btn-round" value="Versturen">
+                <a class="btn btn-round" style="background: #F8F9FA; color: #1D2628; margin-left: 10px;" href="tel:0544-373326">
+                    Of bel: 0544-373326
+                </a>
             </form>
         </div>
     </div>

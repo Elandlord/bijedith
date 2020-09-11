@@ -17,7 +17,7 @@ use App\Http\Controllers\AppointmentController;
 Route::get('/', function () {
     $pedicureprocedures = collect([
         0 => [
-            'img'           => '/assets/pictures/DCM_9982-pichi.png',
+            'img'           => '/assets/pictures/DCM_9932-pichi.png',
             'name'          => 'Pedicurebehandeling',
             'description'   => '
             <ul>
@@ -33,7 +33,7 @@ Route::get('/', function () {
             'url' => '/#tarieven',
         ],
         1 => [
-            'img'           => '/assets/pictures/DCM_0020-pichi.png',
+            'img'           => '/assets/pictures/DF2_2051-pichi.png',
             'name'          => 'Gespecialiseerde pedicurebehandeling',
             'description'   => 'Mensen kunnen door hun ziektegeschiedenis een verhoogd risico hebben op voetproblemen.<br/><br/>
 
@@ -46,13 +46,13 @@ Waar nodig wordt door Edith als medisch Pedicure samenwerking gezocht met andere
 
     $spaprocedures = collect([
         0 => [
-            'img'           => '/assets/pictures/DCM_9982-pichi.png',
+            'img'           => '/assets/pictures/DCM_9970-pichi.png',
             'name'          => 'Klassieke Voet- en onderbeen massage',
             'description'   => 'Deze stevige massage van ongeveer 30 minuten zorgt ervoor dat uw spieren in onderbeen en voeten weer soepel aanvoelen.<br/><br/>
 Massage geeft nieuwe energie, rust en ontspanning.'
         ],
         1 => [
-            'img'           => '/assets/pictures/DCM_0020-pichi.png',
+            'img'           => '/assets/pictures/DCM_9982-pichi.png',
             'name'          => 'Sparkling-arrangement',
             'description'   => 'Een luxe verwenbehandeling samen met een uitverkorene (zus, vriendin, moeder of dochter).<br/><br/>
 Koffie/thee/drankje en lekkernijen horen hier natuurlijk bij!'

@@ -16,8 +16,6 @@
                         <img data-src="{{ $procedure->img }}" class="object-cover lazyload" style="height: 200px; max-height: 200px;" alt="" />
                         <h4><a href="">{{ $procedure->name }}</a></h4>
                         <p>{!! $procedure->description !!}</p>
-
-{{--                        <a href="#tarieven" class="btn btn-round">Bekijk tarieven</a>--}}
                     </article>
                 </div>
             @empty

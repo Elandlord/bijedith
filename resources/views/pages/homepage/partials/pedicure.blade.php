@@ -31,7 +31,7 @@
             <div class="col-lg-12 col-md-12">
                 <div class="sec-heading text-left">
                     <h3 class="sec-title text-left">Algemene adviezen</h3>
-                    <ul style="	list-style-type: disc;">
+                    <ul style="list-style-position: inside;	list-style-type: disc;">
                         <li>Was uw voeten dagelijks met lauw water en weinig zeep</li>
                         <li>Zorg dat je ze goed droogt, vooral tussen de tenen (maar niet te hard wrijven)</li>
                         <li>Knip de nagels recht af</li>
@@ -49,7 +49,7 @@
             <div class="col-lg-12 col-md-12">
                 <div class="sec-heading text-left">
                     <h3 class="sec-title text-left">Advies bij aankoop schoenen</h3>
-                    <ul style="	list-style-type: disc;">
+                    <ul style="list-style-position: inside;	list-style-type: disc;">
                         <li>Koop nieuwe schoenen altijd in de namiddag voor een betere pasvorm. In de loop van de dag kunnen voeten opzwellen</li>
                         <li>Laat de maat van uw voeten regelmatig opmeten</li>
                         <li>Een schoen moet direct prettig zitten, neem ook aangemeten zolen mee.</li>

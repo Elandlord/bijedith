@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-10 col-md-10 m-auto">
                 <div class="sec-heading">
-                    <h3 class="sec-title">Tarieven</h3>
+                    <h3 class="sec-title blue-border">Tarieven</h3>
 {{--                    <p>Bij Edith verzorgen wij verschillende voetbehandelingen. Naast pedicures zijn wij compleet uitgerust met spabehandelingen.</p>--}}
                 </div>
             </div>

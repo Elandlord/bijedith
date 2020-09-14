@@ -32,3 +32,13 @@ html {
 .navbar {
     border-top: 5px solid #66B7D0 !important;
 }
+
+
+@media(max-width: 900px) {
+    .blue-border {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: white;
+        border: #67B7D0 2px solid;
+    }
+}

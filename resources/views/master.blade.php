@@ -2,8 +2,8 @@
 <head>
     <meta charset="utf-8">
     <link rel="icon" href="/favicon.png">
-    <meta name="theme-color" content="#000000">
-    <meta name="description" content="Web site created using create-react-app">
+    <meta name="theme-color" content="#67B7D0">
+    <meta name="description" content="BijEdith is een pedicurepraktijk in Lichtenvoorde. Voor allround pedicurebehandelingen of gespecialiseerde voetzorg ben je welkom in salon 'Bij Edith'.">
     <link rel="apple-touch-icon" href="logo192.png">
     <link rel="manifest" href="/manifest.json">
     <meta name="viewport" content="width=device-width, initial-scale=1">

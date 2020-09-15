@@ -42,3 +42,7 @@ html {
         border: #67B7D0 2px solid;
     }
 }
+
+.list-style-emoji {
+    list-style-image: url("../../public/assets/images/china-rose-pichi.png");
+}

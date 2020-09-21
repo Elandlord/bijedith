@@ -48,7 +48,7 @@ Waar nodig wordt door Edith als medisch Pedicure samenwerking gezocht met andere
         0 => [
             'img'           => '/assets/pictures/DCM_9970-pichi.png',
             'name'          => 'Klassieke Voet- en onderbeen massage',
-            'description'   => 'Deze stevige massage van ongeveer 30 minuten zorgt ervoor dat uw spieren in onderbeen en voeten weer soepel aanvoelen.<br/><br/>
+            'description'   => 'Deze stevige massage van ongeveer 30 minuten zorgt ervoor dat de spieren in jouw onderbeen en voeten weer soepel aanvoelen.<br/><br/>
 Massage geeft nieuwe energie, rust en ontspanning.'
         ],
         1 => [

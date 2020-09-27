@@ -7,7 +7,7 @@
             <div class="col-lg-8 col-md-10 m-auto">
                 <div class="sec-heading">
                     <h3 class="sec-title blue-border" style="word-wrap: break-word">Behandelingen</h3>
-                    <p>Hieronder zie je een aantal van mijn behandelingen.</p>
+                    <p>Hieronder zie je een aantal van de behandelingen.</p>
                 </div>
             </div>
         </div>

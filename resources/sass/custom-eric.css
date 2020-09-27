@@ -36,19 +36,17 @@ html {
 
 @media(max-width: 900px) {
     .blue-border {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        background: white;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        background: rgba(255, 255, 255, 0.8);
         border: #67B7D0 2px solid;
+    }
+
+    .sec-title {
+        font-size: 1.5rem !important;
     }
 }
 
 .list-style-emoji {
     list-style-image: url("../../public/assets/images/china-rose-resized-icon.png");
-}
-
-@media(max-width: 900px) {
-    .sec-title {
-        /*font-size: 13px !important;*/
-    }
 }

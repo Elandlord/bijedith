@@ -46,3 +46,9 @@ html {
 .list-style-emoji {
     list-style-image: url("../../public/assets/images/china-rose-resized-icon.png");
 }
+
+@media(max-width: 900px) {
+    .sec-title {
+        /*font-size: 13px !important;*/
+    }
+}

@@ -6,8 +6,8 @@
         <div class="row">
             <div class="col-lg-8 col-md-10 m-auto">
                 <div class="sec-heading">
-                    <h3 class="sec-title blue-border" style="word-wrap: break-word">Pedicurebehandelingen</h3>
-                    <p>Hieronder zie je een aantal van onze pedicurebehandelingen.</p>
+                    <h3 class="sec-title blue-border" style="word-wrap: break-word">Behandelingen</h3>
+                    <p>Hieronder zie je een aantal van onze behandelingen.</p>
                 </div>
             </div>
         </div>

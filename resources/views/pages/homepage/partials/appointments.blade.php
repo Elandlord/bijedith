@@ -25,7 +25,7 @@
                     <textarea name="message" placeholder="Opmerking" maxlength="350"></textarea>
                 </div>
                 <div class="form-field flex">
-                    Door op deze checkbox te klikken, ga je akkoord met onze <a target="_blank" href="{{ route('privacy') }}">privacyverklaring</a>.
+                    Door op deze checkbox te klikken, ga je akkoord met de <a target="_blank" href="{{ route('privacy') }}">privacyverklaring</a>.
                     <div style="width: 50px; margin-top: 10px;">
                         <input class="py-2 px-2" type="checkbox" name="opt_in" value="1" required/>
                     </div>

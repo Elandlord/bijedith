@@ -22,7 +22,7 @@
                         Graag tot ziens.<br/><br/>
 
                         Edith Groothuis</p>
-                    <a href="#pedicurebehandelingen" class="btn">Bekijk onze behandelingen</a>
+                    <a href="#pedicurebehandelingen" class="btn">Bekijk mijn behandelingen</a>
                 </div>
             </div>
             <div class="col-lg-5">

@@ -32,13 +32,13 @@
                 <div class="sec-heading text-left">
                     <div class="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-8">
                         <h5 class="mb-8 text-4xl text-bijedith-black leading-none md:pl-2">
-                            Algemene <span class="inline-block text-deep-purple-accent-400">adviezen</span>
+                            Algemene <span class="inline-block text-bijedith-fresh-blue">adviezen</span>
                         </h5>
                         <div class="grid gap-3 row-gap-3 lg:grid-cols-2">
                             <ul class="space-y-3">
                                 <li class="flex items-start">
                                     <span class="mr-1">
-                                        <svg class="w-5 h-5 mt-px text-deep-purple-accent-400"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                             <polyline points="9 11 12 14 22 4"></polyline>
                                             <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
                                         </svg>
@@ -47,7 +47,7 @@
                                 </li>
                                 <li class="flex items-start">
                                     <span class="mr-1">
-                                        <svg class="w-5 h-5 mt-px text-deep-purple-accent-400"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                             <polyline points="9 11 12 14 22 4"></polyline>
                                             <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
                                         </svg>
@@ -56,7 +56,7 @@
                                 </li>
                                 <li class="flex items-start">
                                     <span class="mr-1">
-                                        <svg class="w-5 h-5 mt-px text-deep-purple-accent-400"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                             <polyline points="9 11 12 14 22 4"></polyline>
                                             <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
                                         </svg>
@@ -65,7 +65,7 @@
                                 </li>
                                 <li class="flex items-start">
                                     <span class="mr-1">
-                                        <svg class="w-5 h-5 mt-px text-deep-purple-accent-400"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                             <polyline points="9 11 12 14 22 4"></polyline>
                                             <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
                                         </svg>
@@ -74,7 +74,7 @@
                                 </li>
                                 <li class="flex items-start">
                                     <span class="mr-1">
-                                        <svg class="w-5 h-5 mt-px text-deep-purple-accent-400"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                             <polyline points="9 11 12 14 22 4"></polyline>
                                             <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
                                         </svg>
@@ -83,7 +83,7 @@
                                 </li>
                                 <li class="flex items-start">
                                     <span class="mr-1">
-                                        <svg class="w-5 h-5 mt-px text-deep-purple-accent-400"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                             <polyline points="9 11 12 14 22 4"></polyline>
                                             <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
                                         </svg>
@@ -92,7 +92,7 @@
                                 </li>
                                 <li class="flex items-start">
                                     <span class="mr-1">
-                                        <svg class="w-5 h-5 mt-px text-deep-purple-accent-400"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                             <polyline points="9 11 12 14 22 4"></polyline>
                                             <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
                                         </svg>
@@ -101,7 +101,7 @@
                                 </li>
                                 <li class="flex items-start">
                                     <span class="mr-1">
-                                        <svg class="w-5 h-5 mt-px text-deep-purple-accent-400"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                             <polyline points="9 11 12 14 22 4"></polyline>
                                             <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
                                         </svg>
@@ -110,7 +110,7 @@
                                 </li>
                                 <li class="flex items-start">
                                     <span class="mr-1">
-                                        <svg class="w-5 h-5 mt-px text-deep-purple-accent-400"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                             <polyline points="9 11 12 14 22 4"></polyline>
                                             <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
                                         </svg>
@@ -119,7 +119,7 @@
                                 </li>
                                 <li class="flex items-start">
                                     <span class="mr-1">
-                                        <svg class="w-5 h-5 mt-px text-deep-purple-accent-400"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                             <polyline points="9 11 12 14 22 4"></polyline>
                                             <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
                                         </svg>
@@ -137,13 +137,13 @@
                 <div class="sec-heading text-left">
                     <div class="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-8">
                         <h5 class="mb-8 text-4xl text-bijedith-black leading-none md:pl-2">
-                            Advies bij aankoop <span class="inline-block text-deep-purple-accent-400">schoenen</span>
+                            Advies bij aankoop <span class="inline-block text-bijedith-fresh-blue">schoenen</span>
                         </h5>
                         <div class="grid gap-3 row-gap-3 lg:grid-cols-2">
                             <ul class="space-y-3">
                                 <li class="flex items-start">
                                     <span class="mr-1">
-                                        <svg class="w-5 h-5 mt-px text-deep-purple-accent-400"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                             <polyline points="9 11 12 14 22 4"></polyline>
                                             <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
                                         </svg>
@@ -152,7 +152,7 @@
                                 </li>
                                 <li class="flex items-start">
                                     <span class="mr-1">
-                                        <svg class="w-5 h-5 mt-px text-deep-purple-accent-400"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                             <polyline points="9 11 12 14 22 4"></polyline>
                                             <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
                                         </svg>
@@ -161,7 +161,7 @@
                                 </li>
                                 <li class="flex items-start">
                                     <span class="mr-1">
-                                        <svg class="w-5 h-5 mt-px text-deep-purple-accent-400"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                             <polyline points="9 11 12 14 22 4"></polyline>
                                             <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
                                         </svg>
@@ -170,7 +170,7 @@
                                 </li>
                                 <li class="flex items-start">
                                     <span class="mr-1">
-                                        <svg class="w-5 h-5 mt-px text-deep-purple-accent-400"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                             <polyline points="9 11 12 14 22 4"></polyline>
                                             <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
                                         </svg>

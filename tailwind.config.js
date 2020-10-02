@@ -300,7 +300,8 @@ module.exports = {
                     900: '#3e2723',
                 },
                 bijedith: {
-                    'black': '#1e2528'
+                    'black': '#1e2528',
+                    'fresh-blue': '#67B7D0',
                 }
             },
             spacing: {

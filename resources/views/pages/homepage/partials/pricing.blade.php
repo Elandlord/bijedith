@@ -1,4 +1,4 @@
-<section class="team" id="tarieven">
+<section class="team animate__animated animate__fadeIn wow" id="tarieven">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-md-10 m-auto">

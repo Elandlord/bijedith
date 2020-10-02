@@ -34,5 +34,9 @@
 @include('components.footer')
 
 <script defer src="{{ mix('/js/app.js') }}"></script>
+<script src="/js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 </body>
 </html>

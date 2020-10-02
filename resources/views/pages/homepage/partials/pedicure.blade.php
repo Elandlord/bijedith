@@ -1,4 +1,4 @@
-<section class="about" id="pedicurebehandelingen">
+<section class="about animate__animated animate__fadeIn wow" id="pedicurebehandelingen">
     <img data-src="/assets/images/china-rose.png" class="flower-1 lazyload"/>
     <img data-src="/assets/images/jasmine.png" class="flower-2 lazyload"/>
 

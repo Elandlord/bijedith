@@ -1,4 +1,4 @@
-<section class="appointment" id="contact">
+<section class="appointment animate__animated animate__fadeIn wow" id="contact">
     <div class="appointment-wrap">
         <figure>
             <img class="lazyload" data-src="/assets/pictures/DCM_0020-pichi.png" alt="" />

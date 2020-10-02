@@ -24,8 +24,10 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
+        "animate.css": "^4.1.1",
         "jquery": "^3.4.1",
         "lazysizes": "^5.2.2",
+        "tailwindcss": "^1.8.10",
         "toastr": "^2.1.4",
         "vue-owl-carousel2": "^2.0.7"
     }

@@ -1,4 +1,4 @@
-<section class="banner" id="home">
+<section class="banner animate__animated animate__fadeIn wow" id="home">
     <div class="container">
         <div class="row">
             <div class="col-lg-7">

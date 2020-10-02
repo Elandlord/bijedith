@@ -1,4 +1,4 @@
-<section class="procedures" id="spa-arrangementen">
+<section class="procedures animate__animated animate__fadeIn wow" id="spa-arrangementen">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-md-10 m-auto">

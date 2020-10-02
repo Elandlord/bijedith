@@ -31,7 +31,7 @@
             <div class="col-lg-12 col-md-12">
                 <div class="sec-heading text-left">
                     <div class="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-8">
-                        <h5 class="mb-8 text-4xl font-extrabold leading-none md:pl-2">
+                        <h5 class="mb-8 text-4xl text-bijedith-black leading-none md:pl-2">
                             Algemene <span class="inline-block text-deep-purple-accent-400">adviezen</span>
                         </h5>
                         <div class="grid gap-3 row-gap-3 lg:grid-cols-2">
@@ -136,7 +136,7 @@
             <div class="col-lg-12 col-md-12">
                 <div class="sec-heading text-left">
                     <div class="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-8">
-                        <h5 class="mb-8 text-4xl font-extrabold leading-none md:pl-2">
+                        <h5 class="mb-8 text-4xl text-bijedith-black leading-none md:pl-2">
                             Advies bij aankoop <span class="inline-block text-deep-purple-accent-400">schoenen</span>
                         </h5>
                         <div class="grid gap-3 row-gap-3 lg:grid-cols-2">

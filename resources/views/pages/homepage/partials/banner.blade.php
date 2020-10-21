@@ -4,7 +4,7 @@
             <div class="col-lg-7">
                 <div class="banner-content">
                     <span>Pedicure & Spa</span>
-                    <h2>Welkom bij Edith…..</h2>
+                    <h2>Welkom bij Edith</h2>
                     <p>Mijn naam is Edith Groothuis. Al meer dan 20 jaar ben ik werkzaam als ambulant pedicure en
                         heb daarin een schat aan ervaring en een mooie klantenkring opgebouwd.<br/><br/>
 

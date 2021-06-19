@@ -4,6 +4,8 @@ use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\AppointmentController;
+use Spatie\Honeypot\ProtectAgainstSpam;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,5 +26,5 @@ Route::get('privacyverklaring', function() {
 })->name('privacy');
 
 Route::post('/mail/appointment', [AppointmentController::class, 'index'])
-    ->middleware(\Spatie\Honeypot\ProtectAgainstSpam::class)
+    ->middleware(ProtectAgainstSpam::class)
     ->name('mail.appointment');

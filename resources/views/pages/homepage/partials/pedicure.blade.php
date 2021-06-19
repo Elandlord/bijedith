@@ -15,7 +15,7 @@
             @forelse($pedicureprocedures as $procedure)
                 @php $procedure = (object) $procedure; @endphp
                 <div class="col-md-6">
-                    <article class="post">
+                    <article class="post h-full">
                         <img data-src="{{ $procedure->img }}" class="object-cover lazyload" style="height: 300px; max-height: 300px;" alt="" />
                         <h4><a href="">{{ $procedure->name }}</a></h4>
                         <p>{!!  $procedure->description !!}</p>
@@ -36,7 +36,7 @@
                         </h5>
                         <ul class="space-y-3">
                             <li class="flex items-start items-center">
-                                <span class="mr-1">
+                                <span class="mr-4">
                                     <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <polyline points="9 11 12 14 22 4"></polyline>
                                         <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
@@ -45,7 +45,7 @@
                                 Was je voeten dagelijks met lauw water en weinig zeep
                             </li>
                             <li class="flex items-start items-center">
-                                <span class="mr-1">
+                                <span class="mr-4">
                                     <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <polyline points="9 11 12 14 22 4"></polyline>
                                         <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
@@ -54,7 +54,7 @@
                                 Zorg dat je ze goed droogt, vooral tussen de tenen (maar niet te hard wrijven)
                             </li>
                             <li class="flex items-start items-center">
-                                <span class="mr-1">
+                                <span class="mr-4">
                                     <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <polyline points="9 11 12 14 22 4"></polyline>
                                         <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
@@ -63,7 +63,7 @@
                                 Knip de nagels recht af
                             </li>
                             <li class="flex items-start items-center">
-                                <span class="mr-1">
+                                <span class="mr-4">
                                     <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <polyline points="9 11 12 14 22 4"></polyline>
                                         <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
@@ -72,7 +72,7 @@
                                 Smeer de voeten goed in, maar niet tussen de tenen, zodat de huid niet uitdroogt
                             </li>
                             <li class="flex items-start items-center">
-                                <span class="mr-1">
+                                <span class="mr-4">
                                     <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <polyline points="9 11 12 14 22 4"></polyline>
                                         <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
@@ -81,7 +81,7 @@
                                 Draag schone katoenen sokken (zonder dikke naden) die niet knellen
                             </li>
                             <li class="flex items-start items-center">
-                                <span class="mr-1">
+                                <span class="mr-4">
                                     <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <polyline points="9 11 12 14 22 4"></polyline>
                                         <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
@@ -90,7 +90,7 @@
                                 Zorg voor goed passende schoenen van natuurlijk materiaal, dit vermindert de kans op blaren, likdoorns en eeltplekken
                             </li>
                             <li class="flex items-start items-center">
-                                <span class="mr-1">
+                                <span class="mr-4">
                                     <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <polyline points="9 11 12 14 22 4"></polyline>
                                         <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
@@ -99,7 +99,7 @@
                                 Controleer de binnenkant van je schoenen op oneffenheden
                             </li>
                             <li class="flex items-start items-center">
-                                <span class="mr-1">
+                                <span class="mr-4">
                                     <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <polyline points="9 11 12 14 22 4"></polyline>
                                         <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
@@ -108,7 +108,7 @@
                                 Wissel indien mogelijk dagelijks je schoenen
                             </li>
                             <li class="flex items-start items-center">
-                                <span class="mr-1">
+                                <span class="mr-4">
                                     <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <polyline points="9 11 12 14 22 4"></polyline>
                                         <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
@@ -130,7 +130,7 @@
                         </h5>
                         <ul class="space-y-3">
                             <li class="flex items-start items-center">
-                                <span class="mr-1">
+                                <span class="mr-4">
                                     <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <polyline points="9 11 12 14 22 4"></polyline>
                                         <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
@@ -139,7 +139,7 @@
                                 Koop nieuwe schoenen altijd in de namiddag voor een betere pasvorm. In de loop van de dag kunnen voeten opzwellen
                             </li>
                             <li class="flex items-start items-center">
-                                <span class="mr-1">
+                                <span class="mr-4">
                                     <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <polyline points="9 11 12 14 22 4"></polyline>
                                         <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
@@ -148,7 +148,7 @@
                                 Laat de maat van je voeten regelmatig opmeten
                             </li>
                             <li class="flex items-start items-center">
-                                <span class="mr-1">
+                                <span class="mr-4">
                                     <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <polyline points="9 11 12 14 22 4"></polyline>
                                         <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
@@ -157,7 +157,7 @@
                                 Een schoen moet direct prettig zitten, neem ook aangemeten zolen mee.
                             </li>
                             <li class="flex items-start items-center">
-                                <span class="mr-1">
+                                <span class="mr-4">
                                     <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <polyline points="9 11 12 14 22 4"></polyline>
                                         <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>

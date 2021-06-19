@@ -73,7 +73,7 @@ Koffie/thee/drankje en lekkernijen horen hier natuurlijk bij!'
     return view('pages.homepage.index', compact('spaprocedures', 'pedicureprocedures'));
 });
 
-Auth::routes();
+//Auth::routes();
 
 Route::get('privacyverklaring', function() {
     return redirect()->to('/assets/documents/privacyverklaring.pdf');

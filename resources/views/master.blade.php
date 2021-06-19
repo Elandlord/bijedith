@@ -22,16 +22,16 @@
 </head>
 <body>
 <div id="app">
-@if (\Session::has('success'))
-    @include('components.project.messages.alert', [
-        'message' => \Session::get('success'),
-        'title'   => 'Gelukt!',
-    ])
-@endif
-@include('components.navbar')
-    @yield('content')
+    @if (\Session::has('success'))
+        @include('components.project.messages.alert', [
+            'message' => \Session::get('success'),
+            'title'   => 'Gelukt!',
+        ])
+    @endif
+    @include('components.navbar')
+        @yield('content')
+    @include('components.footer')
 </div>
-@include('components.footer')
 
 <script defer src="{{ mix('/js/app.js') }}"></script>
 <script src="/js/wow.min.js"></script>

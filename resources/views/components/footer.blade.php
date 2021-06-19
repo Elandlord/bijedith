@@ -7,7 +7,7 @@
             <div class="md:max-w-md lg:col-span-2">
                 <a href="/" aria-label="Go home" title="Company" class="inline-flex items-center">
                     <img style="max-width: 150px;" data-src="/assets/images/bij_edith_logo.png" class="lazyload" alt="" />
-                    <span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">BijEdith</span>
+                    <span class="ml-2 text-xl navbar-brand text-bijedith-black">Bij Edith</span>
                 </a>
                 <div class="mt-4 lg:max-w-sm">
                     <p class="text-sm text-grey-300">

@@ -31,7 +31,7 @@
                     </div>
                 </div>
                 <input type="submit" class="btn btn-round mt-4 sm:mt-0" value="Versturen">
-                <a class="btn btn-round mt-4 ml-2 sm:mt-0 sm:ml-0" style="background: #F8F9FA; color: #1D2628;" href="tel:0544-373326">
+                <a class="btn btn-round bg-bijedith-gray text-bijedith-black hover:bg-bijedith-dark-gray mt-4 ml-2 sm:mt-0 sm:ml-0" style="" href="tel:0544-373326">
                     Of bel: 0544-373326
                 </a>
             </form>

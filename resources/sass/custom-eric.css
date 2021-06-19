@@ -50,3 +50,7 @@ html {
 .list-style-emoji {
     list-style-image: url("../../public/assets/images/china-rose-resized-icon.png");
 }
+
+.btn:hover {
+    @apply bg-bijedith-fresh-blue-darker;
+}

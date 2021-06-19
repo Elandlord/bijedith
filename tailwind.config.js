@@ -300,8 +300,12 @@ module.exports = {
                     900: '#3e2723',
                 },
                 bijedith: {
+                    'white': '#FFF',
+                    'gray': '#F8F9FA',
+                    'dark-gray': '#f0f0f0',
                     'black': '#1e2528',
                     'fresh-blue': '#67B7D0',
+                    'fresh-blue-darker': '#63b1c9',
                 }
             },
             spacing: {

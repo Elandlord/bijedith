@@ -22,19 +22,19 @@
                     </p>
                     <ul class="mt-2 space-y-2">
                         <li>
-                            <a class="transition-colors duration-300 text-grey-300 hover:text-bijedith-black" href="#home">Home <span class="sr-only">(current)</span></a>
+                            <a class="transition-colors duration-300 text-grey-300 hover:text-bijedith-black" href="{{ route('home') . '#home' }}">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li>
-                            <a class="transition-colors duration-300 text-grey-300 hover:text-bijedith-black" href="#pedicurebehandelingen">Pedicurebehandelingen</a>
+                            <a class="transition-colors duration-300 text-grey-300 hover:text-bijedith-black" href="{{ route('home') . '#pedicurebehandelingen' }}">Pedicurebehandelingen</a>
                         </li>
                         <li>
-                            <a class="transition-colors duration-300 text-grey-300 hover:text-bijedith-black" href="#spa-arrangementen">Spa-arrangementen</a>
+                            <a class="transition-colors duration-300 text-grey-300 hover:text-bijedith-black" href="{{ route('home') . '#spa-arrangementen' }}">Spa-arrangementen</a>
                         </li>
                         <li>
-                            <a class="transition-colors duration-300 text-grey-300 hover:text-bijedith-black" href="#tarieven">Tarieven</a>
+                            <a class="transition-colors duration-300 text-grey-300 hover:text-bijedith-black" href="{{ route('home') . '#spa-arrangementen' }}">Tarieven</a>
                         </li>
                         <li>
-                            <a class="transition-colors duration-300 text-grey-300 hover:text-bijedith-black" href="#contact">Contact</a>
+                            <a class="transition-colors duration-300 text-grey-300 hover:text-bijedith-black" href="{{ route('home') . '#contact' }}">Contact</a>
                         </li>
                     </ul>
                 </div>

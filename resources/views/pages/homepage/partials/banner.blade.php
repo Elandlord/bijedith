@@ -29,7 +29,7 @@
                 <div>
                     {{--        <img class="lazyload" data-src='/assets/pictures/DCM_9903-filter.png' />--}}
                     <picture>
-                        <source srcset='/assets/images/webp/bij_edith_logo.png' type="image/webp">
+                        <source srcset='/assets/images/webp/bij_edith_logo.webp' type="image/webp">
                         <source srcset='/assets/images/bij_edith_logo.png' type="image/jpeg">
                         <img class="lazyload" style="width: 80%; margin: auto; margin-top: 30%;" data-src='/assets/images/bij_edith_logo.png' />
                     </picture>

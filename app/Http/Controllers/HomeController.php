@@ -14,6 +14,7 @@ class HomeController extends Controller
         $pedicureprocedures = collect([
             0 => [
                 'img'           => '/assets/pictures/DCM_9932-pichi.png',
+                'webp_img'      => '/assets/images/webp/DCM_9932-pichi.webp',
                 'name'          => 'Pedicurebehandeling',
                 'description'   => '
             <ul>
@@ -30,6 +31,7 @@ class HomeController extends Controller
             ],
             1 => [
                 'img'           => '/assets/pictures/DF2_2051-pichi.png',
+                'webp_img'      => '/assets/images/webp/DF2_2051-pichi.webp',
                 'name'          => 'Gespecialiseerde pedicurebehandeling',
                 'description'   => 'Mensen kunnen door hun ziektegeschiedenis een verhoogd risico hebben op voetproblemen.<br/><br/>
 
@@ -43,18 +45,21 @@ Waar nodig wordt door Edith als Medisch Pedicure samenwerking gezocht met andere
         $spaprocedures = collect([
             0 => [
                 'img'           => '/assets/pictures/DCM_9970-pichi.png',
+                'webp_img'      => '/assets/images/webp/DCM_9970-pichi.webp',
                 'name'          => 'Klassieke Voet- en onderbeen massage',
                 'description'   => 'Deze stevige massage van ongeveer 30 minuten zorgt ervoor dat de spieren in jouw onderbeen en voeten weer soepel aanvoelen.<br/><br/>
 Massage geeft nieuwe energie, rust en ontspanning.'
             ],
             1 => [
                 'img'           => '/assets/pictures/DCM_9982-pichi.png',
+                'webp_img'      => '/assets/images/webp/DCM_9982-pichi.webp',
                 'name'          => 'Sparkling-arrangement',
                 'description'   => 'Een luxe verwenbehandeling samen met een uitverkorene (zus, vriendin, moeder of dochter).<br/><br/>
 Koffie/thee/drankje en lekkernijen horen hier natuurlijk bij!'
             ],
             2 => [
                 'img'           => '/assets/pictures/DF2_2060-pichi.png',
+                'webp_img'      => '/assets/images/webp/DF2_2060-pichi.webp',
                 'name'          => 'In overleg mogelijk',
                 'description'   => '<ul>
             <li>Voetbad met Hydro massage</li>

@@ -13,7 +13,11 @@
                 @php $procedure = (object) $procedure; @endphp
                 <div class="col-md-4">
                     <article class="post h-full">
-                        <img data-src="{{ $procedure->img }}" class="object-cover lazyload" style="height: 200px; max-height: 200px;" alt="" />
+                        <picture>
+                            <source srcset="{{ $procedure->webp_img }}" type="image/webp">
+                            <source srcset="{{ $procedure->img }}" type="image/jpeg">
+                            <img data-src="{{ $procedure->img }}" class="object-cover lazyload" style="height: 200px; max-height: 200px;" alt="" />
+                        </picture>
                         <h4>
                             <a href="">{{ $procedure->name }}</a>
                         </h4>

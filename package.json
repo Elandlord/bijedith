@@ -11,6 +11,8 @@
         "axios": "^0.21",
         "bootstrap": "^4.0.0",
         "cross-env": "^7.0",
+        "imagemin": "^8.0.0",
+        "imagemin-webp": "^6.0.0",
         "laravel-mix": "^6.0.25",
         "laravel-mix-purgecss": "^6.0.0",
         "lodash": "^4.17.21",

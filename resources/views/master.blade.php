@@ -10,14 +10,14 @@
         gtag('config', 'UA-86938202-2');
     </script>
     <meta charset="utf-8">
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="/public/favicon.ico">
     <meta name="theme-color" content="#67B7D0">
     <meta name="keywords" content="Pedicure Lichtenvoorde, medisch pedicure Lichtenvoorde, Spa">
     <meta name="description" content="BijEdith is een pedicurepraktijk in Lichtenvoorde. Voor allround pedicurebehandelingen of gespecialiseerde voetzorg ben je welkom in salon 'Bij Edith'.">
-    <link rel="apple-touch-icon" href="logo192.png">
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="/public/mix-manifest.json">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bij Edith | Pedicurepraktijk Edith Groothuis in Lichtenvoorde</title>
+    <link rel="preload" href="{{ mix('/css/app.css') }}" as="style">
     <link rel="stylesheet" type="text/css" href="{{ mix('/css/app.css') }}">
 </head>
 <body>

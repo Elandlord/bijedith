@@ -1,15 +1,6 @@
 <section class="about animate__animated animate__fadeIn wow" id="pedicurebehandelingen">
-    <picure>
-        <source srcset="/assets/images/webp/china-rose.png" type="image/webp">
-        <source srcset="/assets/images/china-rose.png" type="image/jpeg">
-        <img data-src="/assets/images/china-rose.png" class="flower-1 lazyload"/>
-    </picure>
-
-    <picture>
-        <source srcset="/assets/images/webp/jasmine.webp" type="image/webp">
-        <source srcset="/assets/images/jasmine.png" type="image/jpeg">
-        <img data-src="/assets/images/jasmine.png" class="flower-2 lazyload"/>
-    </picture>
+    <img data-src="/assets/images/china-rose.png" class="flower-1 lazyload"/>
+    <img data-src="/assets/images/jasmine.png" class="flower-2 lazyload"/>
 
     <div class="container">
         <div class="row">
@@ -25,11 +16,7 @@
                 @php $procedure = (object) $procedure; @endphp
                 <div class="col-md-6">
                     <article class="post h-full">
-                        <picture>
-                            <source srcset="{{ $procedure->webp_img }}" type="image/webp">
-                            <source srcset="{{ $procedure->img }}" type="image/jpeg">
-                            <img data-src="{{ $procedure->img }}" class="object-cover lazyload" style="height: 300px; max-height: 300px;" alt="" />
-                        </picture>
+                        <img data-src="{{ $procedure->img }}" class="object-cover lazyload" style="height: 300px; max-height: 300px;" alt="" />
                         <h4><a href="">{{ $procedure->name }}</a></h4>
                         <p>{!!  $procedure->description !!}</p>
                         {{--                        <a href="#tarieven" class="btn btn-round">Bekijk tarieven</a>--}}

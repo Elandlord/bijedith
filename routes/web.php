@@ -20,6 +20,8 @@ use Spatie\Honeypot\ProtectAgainstSpam;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 //Auth::routes();
+Route::get('phpinfo', fn() => phpinfo());
+
 Route::get('privacyverklaring', function() {
     return redirect()->to('/assets/documents/privacyverklaring.pdf');
 })->name('privacy');

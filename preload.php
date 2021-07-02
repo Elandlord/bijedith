@@ -92,7 +92,7 @@ class Preloader
 
         // Finally we require the path,
         // causing all its dependencies to be loaded as well
-        require_once($path);
+        opcache_compile_file($path);
         self::$count++;
         echo "[Preloader] Preloaded `{$class}`" . PHP_EOL;
     }

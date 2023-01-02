@@ -21,23 +21,23 @@
                         <tbody>
                             <tr>
                                 <td>Pedicurebehandelingen (standaard)</td>
-                                <td> €33,- </td>
+                                <td> €36,- </td>
                             </tr>
                             <tr>
                                 <td>Pedicurebehandelingen (kort)</td>
-                                <td> €25,-</td>
+                                <td> €28,-</td>
                             </tr>
                             <tr>
                                 <td>Spa-arrangement - Klassieke voet- en onderbeenmassage</td>
-                                <td>€33,-</td>
+                                <td>€36,-</td>
                             </tr>
                             <tr>
                                 <td>Spa-arrangement - Klassieke voet- en onderbeenmassage, aansluitend aan een behandeling</td>
-                                <td>€17,-</td>
+                                <td>€20,-</td>
                             </tr>
                             <tr>
                                 <td>Spa-arrangement - Sparkling – p.p.</td>
-                                <td>€ 50,-</td>
+                                <td>€ 53,-</td>
                             </tr>
                         </tbody>
                     </table>

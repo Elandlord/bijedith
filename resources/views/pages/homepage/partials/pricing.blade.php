@@ -20,11 +20,11 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Pedicurebehandelingen (standaard)</td>
+                                <td>Pedicurebehandeling (standaard/medisch)</td>
                                 <td> € 36,- </td>
                             </tr>
                             <tr>
-                                <td>Pedicurebehandelingen (kort)</td>
+                                <td>Pedicurebehandeling (kort)</td>
                                 <td> € 28,-</td>
                             </tr>
                             <tr>

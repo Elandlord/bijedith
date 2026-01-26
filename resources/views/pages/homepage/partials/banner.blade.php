@@ -5,14 +5,18 @@
                 <div class="banner-content">
                     <span>Pedicure & Spa</span>
                     <h2>Welkom bij Edith</h2>
-                    <p>Mijn naam is Edith Groothuis. Al meer dan 20 jaar ben ik werkzaam als ambulant pedicure en
-                        heb daarin een schat aan ervaring en een mooie klantenkring opgebouwd.<br/><br/>
+                    <p>Mijn naam is Edith Groothuis. Ruim 25 jaar ben ik werkzaam als pedicure en heb daarbij een schat aan ervaringen en een mooie klantenkring opgebouwd.<br/><br/>
 
-                        Mijn wens om, na al die “reizende ”jaren, toch een eigen pedicuresalon aan huis in te richten
-                        is nu uitgekomen. Het is een fijne werkplek geworden.<br/><br/>
+                        De aantekeningen Diabetische Voet en Reumatische Voet zijn 10 jaar geleden opgeschaald met het diploma Medisch Pedicure.<br/><br/>
+
+                        Aan huis is 6 jaar geleden een fijne werkplek gecreëerd.<br/><br/>
+
+                        Medische voetbehandeling worden vergoed. De podotherapeut heeft hierin een coördinerende rol.<br/><br/>
+
+                        Daarnaast werk ik ambulant voor de bewoners van Careaz in Lichtenvoorde.<br/><br/>
 
                         Voor allround pedicurebehandelingen, gespecialiseerde voetzorg of pure ontspanning met
-                        een Spa-arrangement ben je dan ook van harte welkom in mijn nieuwe salon “Bij Edith”.<br/><br/>
+                        een Spa-arrangement ben je dan ook van harte welkom in mijn salon "Bij Edith".<br/><br/>
 
                         Bij Edith kun je altijd rekenen op kwaliteit, hygiëne en vakkundige voetzorg in een prettige
                         informele sfeer.<br/><br/>

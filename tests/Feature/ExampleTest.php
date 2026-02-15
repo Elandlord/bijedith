@@ -7,15 +7,21 @@ use Tests\TestCase;
 
 class ExampleTest extends TestCase
 {
-    /**
-     * A basic test example.
-     *
-     * @return void
-     */
-    public function testBasicTest()
+    public function testHomePageLoadsSuccessfully()
     {
         $response = $this->get('/');
 
         $response->assertStatus(200);
+    }
+
+    public function testHomepageShowsModernizedNavigationAndCta()
+    {
+        $response = $this->get('/');
+
+        $response->assertStatus(200);
+        $response->assertSee('Bekijk behandelingen');
+        $response->assertSee('Plan contact');
+        $response->assertSee('Spa-arrangementen');
+        $response->assertSee('Tarieven');
     }
 }

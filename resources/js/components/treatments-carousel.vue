@@ -138,6 +138,41 @@ export default {
     scroll-snap-align: start;
 }
 
+.single-service {
+    overflow: hidden;
+    position: relative;
+    border-radius: 1rem;
+}
+
+.service-card {
+    display: block;
+    width: 100%;
+    height: 320px;
+}
+
+.service-hover {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 9999px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 0.5rem 1rem;
+}
+
+.service-hover img {
+    height: 28px;
+    width: 28px;
+}
+
+.service-hover span {
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
 .carousel-track::-webkit-scrollbar {
     display: none;
 }

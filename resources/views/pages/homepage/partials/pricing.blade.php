@@ -1,48 +1,42 @@
-<section class="team animate__animated animate__fadeIn wow" id="tarieven">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-10 col-md-10 m-auto">
-                <div class="sec-heading">
-                    <h3 class="sec-title blue-border">Tarieven</h3>
-                    {{--                    <p>Bij Edith verzorgen wij verschillende voetbehandelingen. Naast pedicures zijn wij compleet uitgerust met spabehandelingen.</p>--}}
-                </div>
-            </div>
+<section class="px-4 py-16 sm:px-6 lg:px-8" id="tarieven">
+    <div class="mx-auto w-full max-w-6xl">
+        <div class="max-w-3xl">
+            <span class="section-kicker">Prijzen</span>
+            <h2 class="section-title">Tarieven</h2>
         </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="table-responsive">
-                    <table class="table table-striped table-hover">
-                        <thead>
-                        <tr>
-                            <th>Behandeling</th>
-                            <th>Kosten</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>Pedicurebehandeling (standaard)</td>
-                            <td>€ 45,-</td>
-                        </tr>
-                        <tr>
-                            <td>Pedicurebehandeling (kort)</td>
-                            <td>€ 35,-</td>
-                        </tr>
-                        <tr>
-                            <td>Spa-arrangement - Klassieke voet- en onderbeenmassage</td>
-                            <td>€ 45,-</td>
-                        </tr>
-                        <tr>
-                            <td>Spa-arrangement - Klassieke voet- en onderbeenmassage, aansluitend aan een behandeling
-                            </td>
-                            <td>€ 35,-</td>
-                        </tr>
-                        <tr>
-                            <td>Spa-arrangement - Sparkling – p.p.</td>
-                            <td>€ 70,-</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
+
+        <div class="mt-8 overflow-hidden rounded-2xl border border-brand-100 bg-white shadow-sm">
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-brand-100">
+                    <thead class="bg-brand-50">
+                    <tr>
+                        <th class="px-6 py-4 text-left text-xs font-semibold uppercase tracking-wider text-gray-700">Behandeling</th>
+                        <th class="px-6 py-4 text-left text-xs font-semibold uppercase tracking-wider text-gray-700">Kosten</th>
+                    </tr>
+                    </thead>
+                    <tbody class="divide-y divide-brand-100 text-sm text-gray-700">
+                    <tr>
+                        <td class="px-6 py-4">Pedicurebehandeling (standaard)</td>
+                        <td class="px-6 py-4">€ 45,-</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4">Pedicurebehandeling (kort)</td>
+                        <td class="px-6 py-4">€ 35,-</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4">Spa-arrangement - Klassieke voet- en onderbeenmassage</td>
+                        <td class="px-6 py-4">€ 45,-</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4">Spa-arrangement - Klassieke voet- en onderbeenmassage, aansluitend aan een behandeling</td>
+                        <td class="px-6 py-4">€ 35,-</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4">Spa-arrangement - Sparkling – p.p.</td>
+                        <td class="px-6 py-4">€ 70,-</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

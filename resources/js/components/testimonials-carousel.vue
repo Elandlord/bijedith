@@ -115,8 +115,32 @@ export default {
     opacity: 1;
 }
 
+.single-tst {
+    border-radius: 1rem;
+    border: 1px solid #d6eaf1;
+    background: #ffffff;
+    padding: 2rem;
+    text-align: center;
+}
+
 .quote {
     width: 40px;
+    margin: 0 auto 1rem;
+}
+
+.client-info {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.thumb {
+    width: 48px;
+    height: 48px;
+    border-radius: 9999px;
+    object-fit: cover;
 }
 
 .testimonial-track::-webkit-scrollbar {

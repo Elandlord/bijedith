@@ -1,174 +1,51 @@
-<section class="about animate__animated animate__fadeIn wow" id="pedicurebehandelingen">
-    <img data-src="/assets/images/china-rose.png" class="flower-1 lazyload"/>
-    <img data-src="/assets/images/jasmine.png" class="flower-2 lazyload"/>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-md-10 m-auto">
-                <div class="sec-heading">
-                    <h3 class="sec-title blue-border font" style="word-wrap: break-word">Behandelingen</h3>
-                    <p>Hieronder zie je een aantal van de behandelingen.</p>
-                </div>
-            </div>
+<section class="px-4 py-16 sm:px-6 lg:px-8" id="pedicurebehandelingen">
+    <div class="mx-auto w-full max-w-6xl">
+        <div class="max-w-3xl">
+            <span class="section-kicker">Voetzorg</span>
+            <h2 class="section-title">Pedicurebehandelingen</h2>
+            <p class="mt-3 text-gray-600">Hieronder zie je een selectie van behandelingen.</p>
         </div>
-        <div class="row">
+
+        <div class="mt-10 grid gap-6 md:grid-cols-2">
             @forelse($pedicureprocedures as $procedure)
                 @php $procedure = (object) $procedure; @endphp
-                <div class="col-md-6">
-                    <article class="post h-full">
-                        <img data-src="{{ $procedure->img }}" class="object-cover lazyload" style="height: 300px; max-height: 300px;" alt="" />
-                        <h4><a href="">{{ $procedure->name }}</a></h4>
-                        <p>{!!  $procedure->description !!}</p>
-                        {{--                        <a href="#tarieven" class="btn btn-round">Bekijk tarieven</a>--}}
-                        <a href="#tarieven" class="btn">Tarieven</a>
-
-                    </article>
-                </div>
+                <article class="overflow-hidden rounded-2xl border border-brand-100 bg-white shadow-sm">
+                    <img data-src="{{ $procedure->img }}" class="lazyload h-64 w-full object-cover" alt="" />
+                    <div class="space-y-4 p-6">
+                        <h3 class="text-2xl font-display font-semibold text-bijedith-black">{{ $procedure->name }}</h3>
+                        <p class="text-sm leading-relaxed text-gray-600">{!!  $procedure->description !!}</p>
+                        <a href="#tarieven" class="brand-btn">Bekijk tarieven</a>
+                    </div>
+                </article>
             @empty
             @endforelse
         </div>
-        <div class="row">
-            <div class="col-lg-12 col-md-12">
-                <div class="sec-heading text-left">
-                    <div class="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-8">
-                        <h5 class="mb-8 text-4xl text-bijedith-black leading-none md:pl-2">
-                            Algemene <span class="inline-block text-bijedith-fresh-blue">adviezen</span>
-                        </h5>
-                        <ul class="space-y-3">
-                            <li class="flex items-start items-center">
-                                <span class="mr-4">
-                                    <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <polyline points="9 11 12 14 22 4"></polyline>
-                                        <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
-                                    </svg>
-                                </span>
-                                Was je voeten dagelijks met lauw water en weinig zeep
-                            </li>
-                            <li class="flex items-start items-center">
-                                <span class="mr-4">
-                                    <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <polyline points="9 11 12 14 22 4"></polyline>
-                                        <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
-                                    </svg>
-                                </span>
-                                Zorg dat je ze goed droogt, vooral tussen de tenen (maar niet te hard wrijven)
-                            </li>
-                            <li class="flex items-start items-center">
-                                <span class="mr-4">
-                                    <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <polyline points="9 11 12 14 22 4"></polyline>
-                                        <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
-                                    </svg>
-                                </span>
-                                Knip de nagels recht af
-                            </li>
-                            <li class="flex items-start items-center">
-                                <span class="mr-4">
-                                    <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <polyline points="9 11 12 14 22 4"></polyline>
-                                        <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
-                                    </svg>
-                                </span>
-                                Smeer de voeten goed in, maar niet tussen de tenen, zodat de huid niet uitdroogt
-                            </li>
-                            <li class="flex items-start items-center">
-                                <span class="mr-4">
-                                    <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <polyline points="9 11 12 14 22 4"></polyline>
-                                        <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
-                                    </svg>
-                                </span>
-                                Draag schone katoenen sokken (zonder dikke naden) die niet knellen
-                            </li>
-                            <li class="flex items-start items-center">
-                                <span class="mr-4">
-                                    <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <polyline points="9 11 12 14 22 4"></polyline>
-                                        <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
-                                    </svg>
-                                </span>
-                                Zorg voor goed passende schoenen van natuurlijk materiaal, dit vermindert de kans op blaren, likdoorns en eeltplekken
-                            </li>
-                            <li class="flex items-start items-center">
-                                <span class="mr-4">
-                                    <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <polyline points="9 11 12 14 22 4"></polyline>
-                                        <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
-                                    </svg>
-                                </span>
-                                Controleer de binnenkant van je schoenen op oneffenheden
-                            </li>
-                            <li class="flex items-start items-center">
-                                <span class="mr-4">
-                                    <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <polyline points="9 11 12 14 22 4"></polyline>
-                                        <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
-                                    </svg>
-                                </span>
-                                Wissel indien mogelijk dagelijks je schoenen
-                            </li>
-                            <li class="flex items-start items-center">
-                                <span class="mr-4">
-                                    <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <polyline points="9 11 12 14 22 4"></polyline>
-                                        <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
-                                    </svg>
-                                </span>
-                                Pak voldoende beweging, voetgymnastiek stimuleert de doorbloeding
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 col-md-12">
-                <div class="sec-heading text-left">
-                    <div class="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-8">
-                        <h5 class="mb-8 text-4xl text-bijedith-black leading-none md:pl-2">
-                            Advies bij aankoop <span class="inline-block text-bijedith-fresh-blue">schoenen</span>
-                        </h5>
-                        <ul class="space-y-3">
-                            <li class="flex items-start items-center">
-                                <span class="mr-4">
-                                    <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <polyline points="9 11 12 14 22 4"></polyline>
-                                        <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
-                                    </svg>
-                                </span>
-                                Koop nieuwe schoenen altijd in de namiddag voor een betere pasvorm. In de loop van de dag kunnen voeten opzwellen
-                            </li>
-                            <li class="flex items-start items-center">
-                                <span class="mr-4">
-                                    <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <polyline points="9 11 12 14 22 4"></polyline>
-                                        <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
-                                    </svg>
-                                </span>
-                                Laat de maat van je voeten regelmatig opmeten
-                            </li>
-                            <li class="flex items-start items-center">
-                                <span class="mr-4">
-                                    <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <polyline points="9 11 12 14 22 4"></polyline>
-                                        <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
-                                    </svg>
-                                </span>
-                                Een schoen moet direct prettig zitten, neem ook aangemeten zolen mee.
-                            </li>
-                            <li class="flex items-start items-center">
-                                <span class="mr-4">
-                                    <svg class="w-5 h-5 mt-px text-bijedith-fresh-blue"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <polyline points="9 11 12 14 22 4"></polyline>
-                                        <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
-                                    </svg>
-                                </span>
-                                Let op stiksels en naden ter hoogte van de voorvoet, ze kunnen drukplekken geven
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+
+        <div class="mt-14 grid gap-8 lg:grid-cols-2">
+            <article class="rounded-2xl border border-brand-100 bg-brand-50 p-6">
+                <h3 class="text-2xl font-display font-semibold text-bijedith-black">Algemene adviezen</h3>
+                <ul class="mt-5 space-y-3 text-sm text-gray-700">
+                    <li>Was je voeten dagelijks met lauw water en weinig zeep.</li>
+                    <li>Droog goed af, vooral tussen de tenen.</li>
+                    <li>Knip de nagels recht af.</li>
+                    <li>Smeer de voeten regelmatig in, maar niet tussen de tenen.</li>
+                    <li>Draag schone katoenen sokken zonder knellende naden.</li>
+                    <li>Zorg voor goed passende schoenen van natuurlijk materiaal.</li>
+                    <li>Controleer de binnenkant van schoenen op oneffenheden.</li>
+                    <li>Wissel indien mogelijk dagelijks van schoenen.</li>
+                    <li>Pak voldoende beweging voor een betere doorbloeding.</li>
+                </ul>
+            </article>
+
+            <article class="rounded-2xl border border-brand-100 bg-white p-6">
+                <h3 class="text-2xl font-display font-semibold text-bijedith-black">Advies bij aankoop schoenen</h3>
+                <ul class="mt-5 space-y-3 text-sm text-gray-700">
+                    <li>Koop nieuwe schoenen bij voorkeur in de namiddag.</li>
+                    <li>Laat de maat van je voeten regelmatig opmeten.</li>
+                    <li>Een schoen moet direct prettig zitten; neem aangemeten zolen mee.</li>
+                    <li>Let op stiksels en naden ter hoogte van de voorvoet.</li>
+                </ul>
+            </article>
         </div>
     </div>
 </section>

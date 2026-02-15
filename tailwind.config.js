@@ -7,9 +7,22 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Montserrat', ...defaultTheme.fontFamily.sans],
+                sans: ['Manrope', ...defaultTheme.fontFamily.sans],
+                display: ['Cormorant Garamond', ...defaultTheme.fontFamily.serif],
             },
             colors: {
+                brand: {
+                    50: '#f3f9fc',
+                    100: '#e6f3f8',
+                    200: '#cde7f1',
+                    300: '#afd6e7',
+                    400: '#8dc2db',
+                    500: '#67B7D0',
+                    600: '#4f9fb8',
+                    700: '#3e8198',
+                    800: '#356a7d',
+                    900: '#30596a',
+                },
                 red: {
                     '50': '#ffebee',
                     '100': '#ffcdd2',

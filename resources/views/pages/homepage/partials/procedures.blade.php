@@ -1,29 +1,26 @@
-<section class="procedures animate__animated animate__fadeIn wow" id="spa-arrangementen">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-10 col-md-10 m-auto">
-                <div class="sec-heading">
-                    <h3 class="sec-title blue-border">Spa-arrangementen</h3>
-                    <p>Leuk om te geven , geweldig om te krijgen. Welke Spa-behandeling je ook kiest, je loopt op wolkjes de deur uit.</p>
-                </div>
-            </div>
+<section class="px-4 py-16 sm:px-6 lg:px-8" id="spa-arrangementen">
+    <div class="mx-auto w-full max-w-6xl">
+        <div class="max-w-3xl">
+            <span class="section-kicker">Ontspanning</span>
+            <h2 class="section-title">Spa-arrangementen</h2>
+            <p class="mt-3 text-gray-600">
+                Leuk om te geven, geweldig om te krijgen. Welke spa-behandeling je ook kiest,
+                je loopt ontspannen de deur uit.
+            </p>
         </div>
-        <div class="row">
+
+        <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             @forelse($spaprocedures as $procedure)
                 @php $procedure = (object) $procedure; @endphp
-                <div class="col-md-4">
-                    <article class="post h-full">
-                        <img data-src="{{ $procedure->img }}" class="object-cover lazyload" style="height: 200px; max-height: 200px;" alt="" />
-                        <h4>
-                            <a href="">{{ $procedure->name }}</a>
-                        </h4>
-                        <p>{!! $procedure->description !!}</p>
-                    </article>
-                </div>
+                <article class="overflow-hidden rounded-2xl border border-brand-100 bg-white shadow-sm">
+                    <img data-src="{{ $procedure->img }}" class="lazyload h-56 w-full object-cover" alt="" />
+                    <div class="space-y-3 p-6">
+                        <h3 class="text-xl font-display font-semibold text-bijedith-black">{{ $procedure->name }}</h3>
+                        <p class="text-sm leading-relaxed text-gray-600">{!! $procedure->description !!}</p>
+                    </div>
+                </article>
             @empty
             @endforelse
         </div>
     </div>
 </section>
-
-

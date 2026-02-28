@@ -1,94 +1,179 @@
 <template>
-    <carousel :items="items" :autoplay="autoplay" :nav="nav" v-if="items != null">
-        <div class="single-service">
-            <img data-src="/assets/pictures/DCM_9932-pichi.png" class="object-cover service-card lazyload" style="" alt="" />
-            <div class="service-hover">
-                <img data-src="/assets/images/icons/1.png" class="lazyload" alt="" />
-                <span>Pedicure</span>
-            </div>
+    <div class="carousel-shell">
+        <div
+            ref="track"
+            class="carousel-track"
+            :style="trackStyle"
+        >
+            <article v-for="slide in slides" :key="slide.image" class="single-service carousel-slide">
+                <img :data-src="slide.image" class="object-cover service-card lazyload" alt="" />
+                <div class="service-hover">
+                    <img data-src="/assets/images/icons/1.png" class="lazyload" alt="" />
+                    <span>{{ slide.title }}</span>
+                </div>
+            </article>
         </div>
-        <div class="single-service">
-            <img data-src="/assets/pictures/DCM_9962-pichi.png" class="object-cover service-card lazyload" alt="" />
-            <div class="service-hover">
-                <img data-src="/assets/images/icons/1.png" class="lazyload" alt="" />
-                <span>Pedicure</span>
-            </div>
-        </div>
-        <div class="single-service">
-            <img data-src="/assets/pictures/DF2_2043-3-pichi.png" class="object-cover service-card lazyload" alt="" />
-            <div class="service-hover">
-                <img data-src="/assets/images/icons/1.png" class="lazyload" alt="" />
-                <span>Pedicure</span>
-            </div>
-        </div>
-        <div class="single-service">
-            <img data-src="/assets/pictures/DF2_2051-pichi.png" class="object-cover service-card lazyload" alt="" />
-            <div class="service-hover">
-                <img data-src="/assets/images/icons/1.png" class="lazyload" alt="" />
-                <span>Pedicure</span>
-            </div>
-        </div>
-
-
-<!--        <div class="single-service">-->
-<!--            <img data-src="/assets/images/service/spa3.png" class="object-cover service-card lazyload" alt="" />-->
-<!--            <div class="service-hover">-->
-<!--                <img data-src="/assets/images/icons/1.png" class="lazyload" alt="" />-->
-<!--                <span>Behandeling 5</span>-->
-<!--            </div>-->
-<!--        </div>-->
-
-<!--        <div class="single-service">-->
-<!--            <img data-src="/assets/images/service/spa2.png" class="object-cover service-card lazyload" alt="" />-->
-<!--            <div class="service-hover">-->
-<!--                <img data-src="/assets/images/icons/1.png" class="lazyload" alt="" />-->
-<!--                <span>Behandeling 6</span>-->
-<!--            </div>-->
-<!--        </div>-->
-    </carousel>
+    </div>
 </template>
+
 <script>
-    import carousel from 'vue-owl-carousel2'
+export default {
+    data() {
+        return {
+            activeIndex: 0,
+            autoplayMs: 4500,
+            intervalId: null,
+            itemsPerView: 1,
+            slides: [
+                { image: '/assets/pictures/DCM_9932-pichi.png', title: 'Pedicure' },
+                { image: '/assets/pictures/DCM_9962-pichi.png', title: 'Pedicure' },
+                { image: '/assets/pictures/DF2_2043-3-pichi.png', title: 'Pedicure' },
+                { image: '/assets/pictures/DF2_2051-pichi.png', title: 'Pedicure' },
+            ],
+        };
+    },
 
-    export default {
-        components: { carousel },
+    computed: {
+        maxIndex() {
+            return Math.max(this.slides.length - this.itemsPerView, 0);
+        },
 
-        data() {
+        trackStyle() {
             return {
-                items: null,
-                autoplay: true,
-                nav: false,
-                width: null,
+                '--carousel-items': this.itemsPerView,
+            };
+        },
+    },
+
+    mounted() {
+        this.setItemsPerView();
+        window.addEventListener('resize', this.setItemsPerView);
+        this.startAutoplay();
+    },
+
+    beforeDestroy() {
+        this.stopAutoplay();
+        window.removeEventListener('resize', this.setItemsPerView);
+    },
+
+    methods: {
+        setItemsPerView() {
+            const width = window.innerWidth;
+
+            if (width <= 600) {
+                this.itemsPerView = 1;
+                return;
             }
+
+            if (width <= 900) {
+                this.itemsPerView = 2;
+                return;
+            }
+
+            if (width <= 1200) {
+                this.itemsPerView = 3;
+                return;
+            }
+
+            this.itemsPerView = 4;
         },
 
-        mounted() {
-            this.width = $(window).width();
-            this.getScreenWidth();
+        startAutoplay() {
+            if (this.slides.length <= this.itemsPerView) {
+                return;
+            }
+
+            this.intervalId = window.setInterval(() => {
+                this.activeIndex = this.activeIndex >= this.maxIndex ? 0 : this.activeIndex + 1;
+                this.scrollToActive();
+            }, this.autoplayMs);
         },
 
-        methods: {
-            getScreenWidth() {
-                if(this.width <= 600) {
-                    this.items = 1;
-                    return;
-                }
-
-                if(this.width <= 900) {
-                    this.items = 2;
-                    return;
-                }
-
-                if(this.width <= 1200) {
-                    this.items = 3;
-                    return;
-                }
-
-                if(this.width > 1200) {
-                    this.items = 4;
-                    return;
-                }
+        stopAutoplay() {
+            if (!this.intervalId) {
+                return;
             }
-        }
-    }
+
+            window.clearInterval(this.intervalId);
+            this.intervalId = null;
+        },
+
+        scrollToActive() {
+            const track = this.$refs.track;
+
+            if (!track) {
+                return;
+            }
+
+            const firstChild = track.children[0];
+
+            if (!firstChild) {
+                return;
+            }
+
+            track.scrollTo({
+                behavior: 'smooth',
+                left: firstChild.clientWidth * this.activeIndex,
+            });
+        },
+    },
+};
 </script>
+
+<style scoped>
+.carousel-shell {
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel-slide {
+    flex: 0 0 calc((100% - (var(--carousel-items, 1) - 1) * 1.5rem) / var(--carousel-items, 1));
+    scroll-snap-align: start;
+}
+
+.single-service {
+    overflow: hidden;
+    position: relative;
+    border-radius: 1rem;
+}
+
+.service-card {
+    display: block;
+    width: 100%;
+    height: 320px;
+}
+
+.service-hover {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 9999px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 0.5rem 1rem;
+}
+
+.service-hover img {
+    height: 28px;
+    width: 28px;
+}
+
+.service-hover span {
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.carousel-track::-webkit-scrollbar {
+    display: none;
+}
+</style>

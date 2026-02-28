@@ -1,12 +1,10 @@
 <html lang="nl">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-86938202-2"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'UA-86938202-2');
     </script>
     <meta charset="utf-8">
@@ -17,26 +15,30 @@
     <link rel="manifest" href="/public/mix-manifest.json">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bij Edith | Pedicurepraktijk Edith Groothuis in Lichtenvoorde</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="preload" href="{{ mix('/css/app.css') }}" as="style">
     <link rel="stylesheet" type="text/css" href="{{ mix('/css/app.css') }}">
 </head>
 <body>
-<div id="app">
+<div id="app" class="min-h-screen bg-gradient-to-b from-brand-50 via-white to-white">
     @if (\Session::has('success'))
         @include('components.project.messages.alert', [
             'message' => \Session::get('success'),
             'title'   => 'Gelukt!',
         ])
     @endif
+
     @include('components.navbar')
+
+    <main>
         @yield('content')
+    </main>
+
     @include('components.footer')
 </div>
 
 <script defer src="{{ mix('/js/app.js') }}"></script>
-<script src="/js/wow.min.js"></script>
-<script>
-    new WOW().init();
-</script>
 </body>
 </html>

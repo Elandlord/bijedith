@@ -3,7 +3,7 @@
     <img src="/assets/images/china-rose.png" alt="" class="hidden lg:block absolute -right-10 bottom-10 w-24 opacity-10 pointer-events-none" />
     <div class="mx-auto grid w-full max-w-6xl gap-12 lg:grid-cols-2 lg:items-center relative z-10">
         <div>
-            <span class="section-kicker">Pedicure & Spa</span>
+            <span class="section-kicker"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v4"/><path d="M12 18v4"/><path d="m4.93 4.93 2.83 2.83"/><path d="m16.24 16.24 2.83 2.83"/><path d="M2 12h4"/><path d="M18 12h4"/><path d="m4.93 19.07 2.83-2.83"/><path d="m16.24 7.76 2.83-2.83"/></svg> Pedicure & Spa</span>
             <h1 class="section-title text-4xl md:text-5xl">Welkom bij Edith</h1>
             <p class="mt-6 text-base leading-relaxed text-gray-600">
                 Mijn naam is Edith Groothuis. Al ruim 25 jaar werk ik als pedicure en medisch pedicure met een

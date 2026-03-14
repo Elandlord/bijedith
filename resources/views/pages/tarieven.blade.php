@@ -8,7 +8,7 @@
 
     <section class="px-4 pb-16 sm:px-6 lg:px-8">
         <div class="mx-auto flex w-full max-w-4xl justify-center">
-            <iframe src="https://groothuis.salonized.com/services?layout=embed" class="w-full rounded-2xl border border-brand-100 shadow-sm" style="max-width: 400px; height: 600px; border: none;"></iframe>
+            <iframe src="https://groothuis.salonized.com/services?layout=embed" class="w-full rounded-2xl border border-brand-100 shadow-sm" style="max-width: 700px; height: 900px; border: none;"></iframe>
         </div>
     </section>
 @endsection

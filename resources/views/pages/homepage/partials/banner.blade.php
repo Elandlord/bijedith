@@ -15,8 +15,8 @@
                 Daarnaast werk ik ambulant voor bewoners van Careaz in Lichtenvoorde.
             </p>
             <div class="mt-8 flex flex-wrap gap-3">
-                <a href="#pedicurebehandelingen" class="brand-btn">Bekijk behandelingen</a>
-                <a href="#contact" class="brand-btn-outline">Plan contact</a>
+                <a href="{{ route('behandelingen') }}" class="brand-btn">Bekijk behandelingen</a>
+                <a href="#sz-booking-open" class="brand-btn-outline">Plan afspraak</a>
             </div>
         </div>
 

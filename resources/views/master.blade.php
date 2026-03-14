@@ -38,6 +38,7 @@
     @include('components.footer')
 </div>
 
+<div class="salonized-booking" data-company="avMXRDrsiQtTjmmxqfcCpTpk" data-color="#4f9fb8" data-language="nl" data-outline="shadow"></div>
 <script defer src="{{ mix('/js/app.js') }}"></script>
 <script src="https://static-widget.salonized.com/loader.js"></script>
 </body>

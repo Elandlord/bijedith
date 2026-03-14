@@ -4,12 +4,12 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap');
+require("./bootstrap");
 
-import Vue from 'vue'
-import 'lazysizes';
+import Vue from "vue";
+import "lazysizes";
 
-window.toastr = require('toastr');
+window.toastr = require("toastr");
 
 /**
  * The following block of code may be used to automatically register your
@@ -18,8 +18,12 @@ window.toastr = require('toastr');
  *
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
  */
-const files = require.context('./', true, /\.vue$/i);
-files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
+const files = require.context("./", true, /\.vue$/i);
+files
+    .keys()
+    .map((key) =>
+        Vue.component(key.split("/").pop().split(".")[0], files(key).default)
+    );
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -28,5 +32,21 @@ files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(
  */
 
 const app = new Vue({
-    el: '#app',
+    el: "#app",
+});
+
+const scrollObserver = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("scroll-visible");
+                scrollObserver.unobserve(entry.target);
+            }
+        });
+    },
+    { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
+);
+
+document.querySelectorAll("[data-scroll]").forEach((el) => {
+    scrollObserver.observe(el);
 });

@@ -12,7 +12,7 @@
             <li><a class="transition hover:text-brand-700 {{ request()->routeIs('contact') ? 'text-brand-700' : '' }}" href="{{ route('contact') }}">Contact</a></li>
         </ul>
 
-        <a class="brand-btn hidden md:inline-flex" href="{{ route('contact') }}">Afspraak maken</a>
+        <button type="button" class="brand-btn hidden md:inline-flex salonized-open">Afspraak maken</button>
 
         <details class="relative md:hidden">
             <summary class="inline-flex cursor-pointer items-center rounded-md border border-brand-200 px-3 py-2 text-sm font-medium text-brand-700">
@@ -25,7 +25,7 @@
                     <li><a class="block transition hover:text-brand-700" href="{{ route('spa-arrangementen') }}">Spa-arrangementen</a></li>
                     <li><a class="block transition hover:text-brand-700" href="{{ route('tarieven') }}">Tarieven</a></li>
                     <li><a class="block transition hover:text-brand-700" href="{{ route('contact') }}">Contact</a></li>
-                    <li><a class="block font-semibold text-brand-700" href="{{ route('contact') }}">Afspraak maken</a></li>
+                    <li><button type="button" class="block font-semibold text-brand-700 salonized-open">Afspraak maken</button></li>
                 </ul>
             </div>
         </details>

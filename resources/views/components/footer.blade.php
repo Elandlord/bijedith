@@ -23,7 +23,7 @@
             <p class="text-sm font-semibold uppercase tracking-wider text-gray-900">Informatie</p>
             <ul class="mt-4 space-y-2 text-sm text-gray-600">
                 <li><a class="transition hover:text-brand-700" target="_blank" href="{{ route('privacy') }}">Privacyverklaring</a></li>
-                <li><a class="transition hover:text-brand-700" href="{{ route('contact') }}">Afspraak maken</a></li>
+                <li><button type="button" class="transition hover:text-brand-700 salonized-open">Afspraak maken</button></li>
             </ul>
         </div>
     </div>

@@ -1,5 +1,5 @@
 <section class="px-4 pb-8 pt-16 sm:px-6 lg:px-8">
-    <div class="mx-auto w-full max-w-6xl">
+    <div class="mx-auto w-full max-w-6xl" data-scroll>
         <span class="section-kicker">{!! $kicker !!}</span>
         <h1 class="section-title text-4xl md:text-5xl">{{ $title }}</h1>
         @if(isset($subtitle))

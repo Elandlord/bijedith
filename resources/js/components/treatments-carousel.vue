@@ -1,9 +1,10 @@
 <template>
     <div class="carousel-shell">
         <div ref="track" class="carousel-track" :style="trackStyle">
-            <article
+            <a
                 v-for="slide in slides"
                 :key="slide.image"
+                :href="slide.href"
                 class="single-service carousel-slide"
             >
                 <img
@@ -18,8 +19,21 @@
                         alt=""
                     />
                     <span>{{ slide.title }}</span>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="service-hover-arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
                 </div>
-            </article>
+            </a>
         </div>
     </div>
 </template>
@@ -36,18 +50,22 @@ export default {
                 {
                     image: "/assets/pictures/DCM_9932-pichi.png",
                     title: "Pedicure",
+                    href: "/behandelingen",
                 },
                 {
                     image: "/assets/pictures/DCM_9962-pichi.png",
                     title: "Behandeling",
+                    href: "/behandelingen",
                 },
                 {
                     image: "/assets/pictures/DF2_2043-3-pichi.png",
                     title: "Voetzorg",
+                    href: "/behandelingen",
                 },
                 {
                     image: "/assets/pictures/DF2_2051-pichi.png",
                     title: "Medische pedicure",
+                    href: "/behandelingen",
                 },
             ],
         };
@@ -169,6 +187,10 @@ export default {
     overflow: hidden;
     position: relative;
     border-radius: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 .service-card {
@@ -203,6 +225,17 @@ export default {
 .service-hover span {
     font-size: 0.95rem;
     font-weight: 600;
+}
+
+.service-hover-arrow {
+    height: 16px;
+    width: 16px;
+    margin-left: auto;
+    transition: transform 0.2s ease;
+}
+
+.single-service:hover .service-hover-arrow {
+    transform: translateX(3px);
 }
 
 .carousel-track::-webkit-scrollbar {

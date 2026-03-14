@@ -11,8 +11,10 @@
             <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 @forelse($spaprocedures as $procedure)
                     @php $procedure = (object) $procedure; @endphp
-                    <article class="overflow-hidden rounded-2xl border border-brand-100 bg-white shadow-sm img-zoom">
-                        <img data-src="{{ $procedure->img }}" class="lazyload h-56 w-full object-cover" alt="" />
+                    <article class="overflow-hidden rounded-2xl border border-brand-100 bg-white shadow-sm">
+                        <div class="img-zoom">
+                            <img data-src="{{ $procedure->img }}" class="lazyload h-56 w-full object-cover" alt="" />
+                        </div>
                         <div class="space-y-3 p-6">
                             <h3 class="text-xl font-display font-semibold text-bijedith-black">{{ $procedure->name }}</h3>
                             <div class="text-sm leading-relaxed text-gray-600">{!! $procedure->description !!}</div>

@@ -18,6 +18,10 @@ use Spatie\Honeypot\ProtectAgainstSpam;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/behandelingen', [HomeController::class, 'behandelingen'])->name('behandelingen');
+Route::get('/spa-arrangementen', [HomeController::class, 'spaArrangementen'])->name('spa-arrangementen');
+Route::get('/tarieven', [HomeController::class, 'tarieven'])->name('tarieven');
+Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 
 //Auth::routes();
 Route::get('phpinfo', fn() => phpinfo());

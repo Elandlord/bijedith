@@ -1,0 +1,46 @@
+@extends('master')
+@section('content')
+    @include('components.page-header', [
+        'kicker' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Prijzen',
+        'title' => 'Tarieven',
+    ])
+
+    <section class="px-4 pb-16 sm:px-6 lg:px-8">
+        <div class="mx-auto w-full max-w-6xl">
+            <div class="overflow-hidden rounded-2xl border border-brand-100 bg-white shadow-sm">
+                <div class="overflow-x-auto">
+                    <table class="min-w-full divide-y divide-brand-100">
+                        <thead class="bg-brand-50">
+                        <tr>
+                            <th class="px-6 py-4 text-left text-xs font-semibold uppercase tracking-wider text-gray-700">Behandeling</th>
+                            <th class="px-6 py-4 text-left text-xs font-semibold uppercase tracking-wider text-gray-700">Kosten</th>
+                        </tr>
+                        </thead>
+                        <tbody class="divide-y divide-brand-100 text-sm text-gray-700">
+                        <tr>
+                            <td class="px-6 py-4">Pedicurebehandeling (standaard)</td>
+                            <td class="px-6 py-4">€ 45,-</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4">Pedicurebehandeling (kort)</td>
+                            <td class="px-6 py-4">€ 35,-</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4">Spa-arrangement - Klassieke voet- en onderbeenmassage</td>
+                            <td class="px-6 py-4">€ 45,-</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4">Spa-arrangement - Klassieke voet- en onderbeenmassage, aansluitend aan een behandeling</td>
+                            <td class="px-6 py-4">€ 35,-</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4">Spa-arrangement - Sparkling – p.p.</td>
+                            <td class="px-6 py-4">€ 70,-</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+@endsection

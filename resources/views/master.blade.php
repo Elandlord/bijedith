@@ -39,5 +39,6 @@
 </div>
 
 <script defer src="{{ mix('/js/app.js') }}"></script>
+<script src="https://static-widget.salonized.com/loader.js"></script>
 </body>
 </html>

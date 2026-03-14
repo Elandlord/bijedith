@@ -175,6 +175,11 @@ export default {
     display: block;
     width: 100%;
     height: 320px;
+    transition: transform 0.3s ease-out;
+}
+
+.single-service:hover .service-card {
+    transform: scale(1.1);
 }
 
 .service-hover {

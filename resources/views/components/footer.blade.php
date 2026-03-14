@@ -23,7 +23,7 @@
             <p class="text-sm font-semibold uppercase tracking-wider text-gray-900">Informatie</p>
             <ul class="mt-4 space-y-2 text-sm text-gray-600">
                 <li><a class="transition hover:text-brand-700" target="_blank" href="{{ route('privacy') }}">Privacyverklaring</a></li>
-                <li><a class="transition hover:text-brand-700" href="tel:0544373326">Telefoon: 0544-373326</a></li>
+                <li><a class="transition hover:text-brand-700" href="{{ route('contact') }}">Afspraak maken</a></li>
             </ul>
         </div>
     </div>

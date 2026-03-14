@@ -24,7 +24,7 @@
 
             <a href="{{ route('tarieven') }}" data-scroll data-scroll-delay="3" class="group rounded-2xl border border-brand-100 bg-white p-8 shadow-sm transition hover:shadow-md hover:border-brand-300">
                 <div class="mb-4 inline-flex rounded-full bg-brand-100 p-3 text-brand-700">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h12M4 14h12M19 6a7.7 7.7 0 0 0-5.2-2A7.9 7.9 0 0 0 6 12a7.9 7.9 0 0 0 7.8 8 7.7 7.7 0 0 0 5.2-2"/></svg>
                 </div>
                 <h3 class="text-xl font-display font-semibold text-bijedith-black group-hover:text-brand-700 transition">Tarieven</h3>
                 <p class="mt-2 text-sm text-gray-600">Overzicht van behandelingen en bijbehorende kosten.</p>

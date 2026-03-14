@@ -1,7 +1,7 @@
 @extends('master')
 @section('content')
     @include('components.page-header', [
-        'kicker' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Prijzen',
+        'kicker' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h12M4 14h12M19 6a7.7 7.7 0 0 0-5.2-2A7.9 7.9 0 0 0 6 12a7.9 7.9 0 0 0 7.8 8 7.7 7.7 0 0 0 5.2-2"/></svg> Prijzen',
         'title' => 'Tarieven',
         'subtitle' => 'Overzicht van alle behandelingen en bijbehorende kosten.',
     ])
@@ -64,7 +64,7 @@
                 <h3 class="text-xl font-display font-semibold text-bijedith-black">Interesse in een behandeling?</h3>
                 <p class="mx-auto mt-3 max-w-md text-sm text-gray-600">Plan direct een afspraak of neem contact op voor meer informatie.</p>
                 <div class="mt-6 flex flex-wrap justify-center gap-3">
-                    <button type="button" class="brand-btn salonized-open">Plan afspraak</button>
+                    <a class="brand-btn" href="#sz-booking-open">Plan afspraak</a>
                     <a class="brand-btn-outline" href="{{ route('contact') }}">Contactgegevens</a>
                 </div>
             </div>

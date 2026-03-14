@@ -41,16 +41,5 @@
 <div class="salonized-booking" data-company="avMXRDrsiQtTjmmxqfcCpTpk" data-color="#4f9fb8" data-language="nl" data-outline="shadow"></div>
 <script defer src="{{ mix('/js/app.js') }}"></script>
 <script src="https://static-widget.salonized.com/loader.js"></script>
-<script>
-document.addEventListener('click', function(e) {
-    var trigger = e.target.closest('.salonized-open');
-    if (!trigger) return;
-    e.preventDefault();
-    var fab = document.querySelector('.salonized-booking iframe, .salonized-booking button, .salonized-booking [role="button"]');
-    if (fab) { fab.click(); return; }
-    var widget = document.querySelector('.salonized-booking');
-    if (widget) widget.click();
-});
-</script>
 </body>
 </html>

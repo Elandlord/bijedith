@@ -13,12 +13,16 @@
                 <p class="mt-4 text-sm leading-relaxed text-gray-600">Pedicurepraktijk in Lichtenvoorde voor allround pedicurebehandelingen, gespecialiseerde voetzorg en ontspannende spa-arrangementen.</p>
                 <dl class="mt-6 space-y-4 text-sm text-gray-600">
                     <div>
+                        <dt class="font-semibold text-gray-900">Adres</dt>
+                        <dd class="mt-1">Pastoor Sandersstraat 28<br>7131 BV Lichtenvoorde</dd>
+                    </div>
+                    <div>
                         <dt class="font-semibold text-gray-900">E-mail</dt>
                         <dd class="mt-1"><a class="text-brand-700 transition hover:text-brand-800" href="mailto:info@bijedith.nl">info@bijedith.nl</a></dd>
                     </div>
                 </dl>
                 <div class="mt-8">
-                    <button type="button" class="brand-btn salonized-open">Plan afspraak</button>
+                    <a class="brand-btn" href="#sz-booking-open">Plan afspraak</a>
                 </div>
             </div>
 

@@ -9,7 +9,7 @@
             <h2 class="section-title">Afspraak maken</h2>
             <p class="mt-4 text-base text-gray-600">Plan direct een afspraak of bekijk onze contactgegevens.</p>
             <div class="mt-6 flex flex-wrap gap-3">
-                <button type="button" class="brand-btn salonized-open">Plan afspraak</button>
+                <a class="brand-btn" href="#sz-booking-open">Plan afspraak</a>
                 <a class="brand-btn-outline" href="{{ route('contact') }}">Contactgegevens</a>
             </div>
         </div>

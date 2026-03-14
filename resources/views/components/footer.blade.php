@@ -6,6 +6,7 @@
                 Bij Edith is een pedicurepraktijk in Lichtenvoorde voor allround pedicurebehandelingen,
                 gespecialiseerde voetzorg en ontspannende spa-arrangementen.
             </p>
+            <p class="mt-3 text-sm text-gray-600">Pastoor Sandersstraat 28, 7131 BV Lichtenvoorde</p>
         </div>
 
         <div>
@@ -23,7 +24,7 @@
             <p class="text-sm font-semibold uppercase tracking-wider text-gray-900">Informatie</p>
             <ul class="mt-4 space-y-2 text-sm text-gray-600">
                 <li><a class="transition hover:text-brand-700" target="_blank" href="{{ route('privacy') }}">Privacyverklaring</a></li>
-                <li><button type="button" class="transition hover:text-brand-700 salonized-open">Afspraak maken</button></li>
+                <li><a class="transition hover:text-brand-700" href="#sz-booking-open">Afspraak maken</a></li>
             </ul>
         </div>
     </div>

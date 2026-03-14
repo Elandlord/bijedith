@@ -13,7 +13,7 @@
                     <img data-src="{{ $procedure->img }}" class="lazyload h-64 w-full object-cover" alt="" />
                     <div class="space-y-4 p-6">
                         <h3 class="text-2xl font-display font-semibold text-bijedith-black">{{ $procedure->name }}</h3>
-                        <p class="text-sm leading-relaxed text-gray-600">{!!  $procedure->description !!}</p>
+                        <div class="text-sm leading-relaxed text-gray-600">{!! $procedure->description !!}</div>
                         <a href="#tarieven" class="brand-btn">Bekijk tarieven</a>
                     </div>
                 </article>
@@ -24,7 +24,7 @@
         <div class="mt-14 grid gap-8 lg:grid-cols-2">
             <article class="rounded-2xl border border-brand-100 bg-brand-50 p-6">
                 <h3 class="text-2xl font-display font-semibold text-bijedith-black">Algemene adviezen</h3>
-                <ul class="mt-5 space-y-3 text-sm text-gray-700">
+                <ul class="content-list mt-5">
                     <li>Was je voeten dagelijks met lauw water en weinig zeep.</li>
                     <li>Droog goed af, vooral tussen de tenen.</li>
                     <li>Knip de nagels recht af.</li>
@@ -39,7 +39,7 @@
 
             <article class="rounded-2xl border border-brand-100 bg-white p-6">
                 <h3 class="text-2xl font-display font-semibold text-bijedith-black">Advies bij aankoop schoenen</h3>
-                <ul class="mt-5 space-y-3 text-sm text-gray-700">
+                <ul class="content-list mt-5">
                     <li>Koop nieuwe schoenen bij voorkeur in de namiddag.</li>
                     <li>Laat de maat van je voeten regelmatig opmeten.</li>
                     <li>Een schoen moet direct prettig zitten; neem aangemeten zolen mee.</li>

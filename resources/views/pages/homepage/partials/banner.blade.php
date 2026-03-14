@@ -1,5 +1,7 @@
-<section class="px-4 pb-16 pt-16 sm:px-6 lg:px-8" id="home">
-    <div class="mx-auto grid w-full max-w-6xl gap-12 lg:grid-cols-2 lg:items-center">
+<section class="px-4 pb-16 pt-16 sm:px-6 lg:px-8 relative overflow-hidden" id="home">
+    <img src="/assets/images/china-rose.png" alt="" class="hidden lg:block absolute -left-16 top-1/4 w-40 opacity-15 pointer-events-none" />
+    <img src="/assets/images/china-rose.png" alt="" class="hidden lg:block absolute -right-10 bottom-10 w-24 opacity-10 pointer-events-none" />
+    <div class="mx-auto grid w-full max-w-6xl gap-12 lg:grid-cols-2 lg:items-center relative z-10">
         <div>
             <span class="section-kicker">Pedicure & Spa</span>
             <h1 class="section-title text-4xl md:text-5xl">Welkom bij Edith</h1>

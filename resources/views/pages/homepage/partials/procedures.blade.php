@@ -16,7 +16,7 @@
                     <img data-src="{{ $procedure->img }}" class="lazyload h-56 w-full object-cover" alt="" />
                     <div class="space-y-3 p-6">
                         <h3 class="text-xl font-display font-semibold text-bijedith-black">{{ $procedure->name }}</h3>
-                        <p class="text-sm leading-relaxed text-gray-600">{!! $procedure->description !!}</p>
+                        <div class="text-sm leading-relaxed text-gray-600">{!! $procedure->description !!}</div>
                     </div>
                 </article>
             @empty

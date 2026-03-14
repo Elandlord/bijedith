@@ -17,7 +17,7 @@ class HomeController extends Controller
                 'webp_img'      => '/assets/images/webp/DCM_9932-pichi.webp',
                 'name'          => 'Pedicurebehandeling',
                 'description'   => '
-            <ul>
+            <ul class="content-list">
                 <li>Wassen en desinfecteren van de voeten voor optimale hygiëne</li>
                 <li>Knippen van de nagels</li>
                 <li>De verzorging van de nagels en de nagelomgeving</li>
@@ -61,7 +61,7 @@ Koffie/thee/drankje en lekkernijen horen hier natuurlijk bij!'
                 'img'           => '/assets/pictures/DF2_2060-pichi.png',
                 'webp_img'      => '/assets/images/webp/DF2_2060-pichi.webp',
                 'name'          => 'In overleg mogelijk',
-                'description'   => '<ul>
+                'description'   => '<ul class="content-list">
             <li>Voetbad met Hydro massage</li>
             <li>Scrub-behandeling</li>
             <li>Nagelverzorging</li>

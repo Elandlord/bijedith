@@ -1,14 +1,22 @@
 <template>
     <div class="carousel-shell">
-        <div
-            ref="track"
-            class="carousel-track"
-            :style="trackStyle"
-        >
-            <article v-for="slide in slides" :key="slide.image" class="single-service carousel-slide">
-                <img :data-src="slide.image" class="object-cover service-card lazyload" alt="" />
+        <div ref="track" class="carousel-track" :style="trackStyle">
+            <article
+                v-for="slide in slides"
+                :key="slide.image"
+                class="single-service carousel-slide"
+            >
+                <img
+                    :data-src="slide.image"
+                    class="object-cover service-card lazyload"
+                    alt=""
+                />
                 <div class="service-hover">
-                    <img data-src="/assets/images/icons/1.png" class="lazyload" alt="" />
+                    <img
+                        data-src="/assets/images/icons/1.png"
+                        class="lazyload"
+                        alt=""
+                    />
                     <span>{{ slide.title }}</span>
                 </div>
             </article>
@@ -25,10 +33,22 @@ export default {
             intervalId: null,
             itemsPerView: 1,
             slides: [
-                { image: '/assets/pictures/DCM_9932-pichi.png', title: 'Pedicure' },
-                { image: '/assets/pictures/DCM_9962-pichi.png', title: 'Pedicure' },
-                { image: '/assets/pictures/DF2_2043-3-pichi.png', title: 'Pedicure' },
-                { image: '/assets/pictures/DF2_2051-pichi.png', title: 'Pedicure' },
+                {
+                    image: "/assets/pictures/DCM_9932-pichi.png",
+                    title: "Pedicure",
+                },
+                {
+                    image: "/assets/pictures/DCM_9962-pichi.png",
+                    title: "Behandeling",
+                },
+                {
+                    image: "/assets/pictures/DF2_2043-3-pichi.png",
+                    title: "Voetzorg",
+                },
+                {
+                    image: "/assets/pictures/DF2_2051-pichi.png",
+                    title: "Medische pedicure",
+                },
             ],
         };
     },
@@ -40,20 +60,20 @@ export default {
 
         trackStyle() {
             return {
-                '--carousel-items': this.itemsPerView,
+                "--carousel-items": this.itemsPerView,
             };
         },
     },
 
     mounted() {
         this.setItemsPerView();
-        window.addEventListener('resize', this.setItemsPerView);
+        window.addEventListener("resize", this.setItemsPerView);
         this.startAutoplay();
     },
 
     beforeDestroy() {
         this.stopAutoplay();
-        window.removeEventListener('resize', this.setItemsPerView);
+        window.removeEventListener("resize", this.setItemsPerView);
     },
 
     methods: {
@@ -84,7 +104,10 @@ export default {
             }
 
             this.intervalId = window.setInterval(() => {
-                this.activeIndex = this.activeIndex >= this.maxIndex ? 0 : this.activeIndex + 1;
+                this.activeIndex =
+                    this.activeIndex >= this.maxIndex
+                        ? 0
+                        : this.activeIndex + 1;
                 this.scrollToActive();
             }, this.autoplayMs);
         },
@@ -112,7 +135,7 @@ export default {
             }
 
             track.scrollTo({
-                behavior: 'smooth',
+                behavior: "smooth",
                 left: firstChild.clientWidth * this.activeIndex,
             });
         },
@@ -134,7 +157,11 @@ export default {
 }
 
 .carousel-slide {
-    flex: 0 0 calc((100% - (var(--carousel-items, 1) - 1) * 1.5rem) / var(--carousel-items, 1));
+    flex: 0 0
+        calc(
+            (100% - (var(--carousel-items, 1) - 1) * 1.5rem) /
+                var(--carousel-items, 1)
+        );
     scroll-snap-align: start;
 }
 

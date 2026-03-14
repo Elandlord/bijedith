@@ -14,6 +14,9 @@
                 Medische voetbehandelingen worden vergoed en de podotherapeut heeft hierin een coördinerende rol.
                 Daarnaast werk ik ambulant voor bewoners van Careaz in Lichtenvoorde.
             </p>
+            <p class="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm leading-relaxed text-amber-800">
+                De salon heeft geen ruimte voor nieuwe vaste klanten. Voor een korte incidentele behandeling kunt u een afspraak plannen middels het online boekingsysteem.
+            </p>
             <div class="mt-8 flex flex-wrap gap-3">
                 <a href="{{ route('behandelingen') }}" class="brand-btn">Bekijk behandelingen</a>
                 <a href="#sz-booking-open" class="brand-btn-outline">Plan afspraak</a>

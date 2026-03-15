@@ -8,10 +8,10 @@
 
     <section class="px-4 pb-16 sm:px-6 lg:px-8">
         <div class="mx-auto mb-8 max-w-4xl">
-            <p class="rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm leading-relaxed text-amber-800">De salon heeft geen ruimte voor nieuwe vaste klanten. Voor een korte incidentele behandeling kunt u een afspraak plannen middels het online boekingsysteem.</p>
+            <p class="rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm leading-relaxed text-amber-900">De salon heeft geen ruimte voor nieuwe vaste klanten. Voor een korte incidentele behandeling kunt u een afspraak plannen middels het online boekingsysteem.</p>
         </div>
         <div class="mx-auto flex w-full max-w-4xl justify-center">
-            <iframe src="https://groothuis.salonized.com/services?layout=embed" class="w-full rounded-2xl border border-brand-100 shadow-sm" style="max-width: 700px; height: 900px; border: none;"></iframe>
+            <iframe src="https://groothuis.salonized.com/services?layout=embed" title="Behandelingen en tarieven" class="w-full rounded-2xl border border-brand-100 shadow-sm" style="max-width: 700px; height: 900px; border: none;"></iframe>
         </div>
     </section>
 @endsection

@@ -3,6 +3,7 @@
     @include('pages.homepage.partials.banner')
 
     <section class="px-4 py-16 sm:px-6 lg:px-8">
+        <h2 class="sr-only">Onze diensten</h2>
         <div class="mx-auto grid w-full max-w-6xl gap-6 md:grid-cols-2 lg:grid-cols-3">
             <a href="{{ route('behandelingen') }}" data-scroll data-scroll-delay="1" class="group rounded-2xl border border-brand-100 bg-white p-8 shadow-sm transition hover:shadow-md hover:border-brand-300">
                 <div class="mb-4 inline-flex rounded-full bg-brand-100 p-3 text-brand-700">

@@ -1,24 +1,27 @@
+<!DOCTYPE html>
 <html lang="nl">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-86938202-2"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bij Edith | Pedicurepraktijk Edith Groothuis in Lichtenvoorde</title>
+    <meta name="theme-color" content="#67B7D0">
+    <meta name="keywords" content="Pedicure Lichtenvoorde, medisch pedicure Lichtenvoorde, Spa">
+    <meta name="description" content="BijEdith is een pedicurepraktijk in Lichtenvoorde. Voor allround pedicurebehandelingen of gespecialiseerde voetzorg ben je welkom in salon 'Bij Edith'.">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://widget.salonized.com">
+    <link rel="preconnect" href="https://static-widget.salonized.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="{{ mix('/css/app.css') }}" as="style">
+    <link rel="stylesheet" type="text/css" href="{{ mix('/css/app.css') }}">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NG5XWRCFNG"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'UA-86938202-2');
+        gtag('config', 'G-NG5XWRCFNG');
     </script>
-    <meta charset="utf-8">
-    <link rel="icon" href="/favicon.ico">
-    <meta name="theme-color" content="#67B7D0">
-    <meta name="keywords" content="Pedicure Lichtenvoorde, medisch pedicure Lichtenvoorde, Spa">
-    <meta name="description" content="BijEdith is een pedicurepraktijk in Lichtenvoorde. Voor allround pedicurebehandelingen of gespecialiseerde voetzorg ben je welkom in salon 'Bij Edith'.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bij Edith | Pedicurepraktijk Edith Groothuis in Lichtenvoorde</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="preload" href="{{ mix('/css/app.css') }}" as="style">
-    <link rel="stylesheet" type="text/css" href="{{ mix('/css/app.css') }}">
 </head>
 <body>
 <div id="app" class="min-h-screen bg-gradient-to-b from-brand-50 via-white to-white">
@@ -40,6 +43,6 @@
 
 <div class="salonized-booking" data-company="avMXRDrsiQtTjmmxqfcCpTpk" data-color="#4f9fb8" data-language="nl" data-outline="shadow"></div>
 <script defer src="{{ mix('/js/app.js') }}"></script>
-<script src="https://static-widget.salonized.com/loader.js"></script>
+<script defer src="https://static-widget.salonized.com/loader.js"></script>
 </body>
 </html>

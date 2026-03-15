@@ -15,7 +15,7 @@
         <a class="brand-btn hidden md:inline-flex" href="#sz-booking-open">Afspraak maken</a>
 
         <details class="relative md:hidden">
-            <summary class="inline-flex cursor-pointer items-center rounded-md border border-brand-200 px-3 py-2 text-sm font-medium text-brand-700">
+            <summary class="inline-flex cursor-pointer items-center rounded-md border border-brand-200 px-3 py-2 text-sm font-medium text-brand-900">
                 Menu
             </summary>
             <div class="absolute right-0 mt-2 w-64 rounded-xl border border-brand-100 bg-white p-4 shadow-lg">

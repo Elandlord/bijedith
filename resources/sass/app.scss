@@ -34,11 +34,11 @@
 
 @layer components {
     .brand-btn {
-        @apply inline-flex items-center justify-center rounded-full bg-brand-600 px-6 py-3 text-sm font-semibold text-white transition duration-200 hover:bg-brand-700;
+        @apply inline-flex items-center justify-center rounded-full bg-brand-700 px-6 py-3 text-sm font-semibold text-white transition duration-200 hover:bg-brand-800;
     }
 
     .brand-btn-outline {
-        @apply inline-flex items-center justify-center rounded-full border border-brand-600 px-6 py-3 text-sm font-semibold text-brand-700 transition duration-200 hover:bg-brand-50;
+        @apply inline-flex items-center justify-center rounded-full border border-brand-700 px-6 py-3 text-sm font-semibold text-brand-800 transition duration-200 hover:bg-brand-50;
     }
 
     .section-title {
@@ -60,7 +60,7 @@
     }
 
     .section-kicker {
-        @apply mb-3 inline-flex items-center gap-2 rounded-full bg-brand-100 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-700;
+        @apply mb-3 inline-flex items-center gap-2 rounded-full bg-brand-100 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-900;
 
         svg {
             @apply h-3.5 w-3.5;

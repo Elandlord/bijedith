@@ -14,7 +14,7 @@
                 Medische voetbehandelingen worden vergoed en de podotherapeut heeft hierin een coördinerende rol.
                 Daarnaast werk ik ambulant voor bewoners van Careaz in Lichtenvoorde.
             </p>
-            <p class="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm leading-relaxed text-amber-800">
+            <p class="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm leading-relaxed text-amber-900">
                 De salon heeft geen ruimte voor nieuwe vaste klanten. Voor een korte incidentele behandeling kunt u een afspraak plannen middels het online boekingsysteem.
             </p>
             <div class="mt-8 flex flex-wrap gap-3">
@@ -27,7 +27,7 @@
             <picture>
                 <source srcset="/assets/images/webp/bij_edith_logo-pichi.webp" type="image/webp">
                 <source srcset="/assets/images/bij_edith_logo-pichi.png" type="image/jpeg">
-                <img class="mx-auto lazyload" style="max-width: 381px;" data-src="/assets/images/bij_edith_logo-pichi.png" alt="Logo Bij Edith" />
+                <img class="mx-auto lazyload" style="max-width: 381px;" data-src="/assets/images/bij_edith_logo-pichi.png" alt="Logo Bij Edith" width="761" height="549" />
             </picture>
         </div>
     </div>

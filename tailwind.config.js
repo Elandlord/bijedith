@@ -13,6 +13,11 @@ module.exports = {
                     ...defaultTheme.fontFamily.serif,
                 ],
             },
+            fontSize: {
+                xs: ["0.8125rem", { lineHeight: "1.125rem" }],
+                sm: ["0.9375rem", { lineHeight: "1.375rem" }],
+                base: ["1.0625rem", { lineHeight: "1.625rem" }],
+            },
             colors: {
                 brand: {
                     50: "#f3f9fc",

@@ -13,7 +13,10 @@
                     @php $procedure = (object) $procedure; @endphp
                     <article class="overflow-hidden rounded-2xl border border-brand-100 bg-white shadow-sm">
                         <div class="img-zoom">
-                            <img data-src="{{ $procedure->img }}" class="lazyload h-56 w-full object-cover" alt="" />
+                            <picture>
+                                <source data-srcset="{{ $procedure->webp_img }}" type="image/webp">
+                                <img data-src="{{ $procedure->img }}" class="lazyload h-56 w-full object-cover" alt="" />
+                            </picture>
                         </div>
                         <div class="space-y-3 p-6">
                             <h3 class="text-xl font-display font-semibold text-bijedith-black">{{ $procedure->name }}</h3>

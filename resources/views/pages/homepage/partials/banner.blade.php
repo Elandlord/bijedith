@@ -1,6 +1,6 @@
 <section class="px-4 pb-16 pt-16 sm:px-6 lg:px-8 relative overflow-hidden" id="home">
-    <img src="/assets/images/china-rose.png" alt="" class="hidden lg:block absolute -left-16 top-1/4 w-40 opacity-15 pointer-events-none" />
-    <img src="/assets/images/china-rose.png" alt="" class="hidden lg:block absolute -right-10 bottom-10 w-24 opacity-10 pointer-events-none" />
+    <img src="/assets/images/webp/china-rose.webp" alt="" class="hidden lg:block absolute -left-16 top-1/4 w-40 opacity-15 pointer-events-none" />
+    <img src="/assets/images/webp/china-rose.webp" alt="" class="hidden lg:block absolute -right-10 bottom-10 w-24 opacity-10 pointer-events-none" />
     <div class="mx-auto grid w-full max-w-6xl gap-12 lg:grid-cols-2 lg:items-center relative z-10">
         <div>
             <span class="section-kicker"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v4"/><path d="M12 18v4"/><path d="m4.93 4.93 2.83 2.83"/><path d="m16.24 16.24 2.83 2.83"/><path d="M2 12h4"/><path d="M18 12h4"/><path d="m4.93 19.07 2.83-2.83"/><path d="m16.24 7.76 2.83-2.83"/></svg> Pedicure & Spa</span>
@@ -14,7 +14,7 @@
                 Medische voetbehandelingen worden vergoed en de podotherapeut heeft hierin een coördinerende rol.
                 Daarnaast werk ik ambulant voor bewoners van Careaz in Lichtenvoorde.
             </p>
-            <p class="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm leading-relaxed text-amber-900">
+            <p class="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-base leading-relaxed text-amber-900">
                 De salon heeft geen ruimte voor nieuwe vaste klanten. Voor een korte incidentele behandeling kunt u een afspraak plannen middels het online boekingsysteem.
             </p>
             <div class="mt-8 flex flex-wrap gap-3">

@@ -12,7 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://widget.salonized.com">
     <link rel="preconnect" href="https://static-widget.salonized.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"></noscript>
     <link rel="preload" href="{{ mix('/css/app.css') }}" as="style">
     <link rel="stylesheet" type="text/css" href="{{ mix('/css/app.css') }}">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NG5XWRCFNG"></script>

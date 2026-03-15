@@ -14,7 +14,7 @@
                         <th class="px-6 py-4 text-left text-xs font-semibold uppercase tracking-wider text-gray-700">Kosten</th>
                     </tr>
                     </thead>
-                    <tbody class="divide-y divide-brand-100 text-sm text-gray-700">
+                    <tbody class="divide-y divide-brand-100 text-base text-gray-700">
                     <tr>
                         <td class="px-6 py-4">Pedicurebehandeling (standaard)</td>
                         <td class="px-6 py-4">€ 45,-</td>

@@ -10,10 +10,13 @@
             @forelse($pedicureprocedures as $procedure)
                 @php $procedure = (object) $procedure; @endphp
                 <article class="overflow-hidden rounded-2xl border border-brand-100 bg-white shadow-sm img-zoom">
-                    <img data-src="{{ $procedure->img }}" class="lazyload h-64 w-full object-cover" alt="" />
+                    <picture>
+                        <source data-srcset="{{ $procedure->webp_img }}" type="image/webp">
+                        <img data-src="{{ $procedure->img }}" class="lazyload h-64 w-full object-cover" alt="" />
+                    </picture>
                     <div class="space-y-4 p-6">
                         <h3 class="text-2xl font-display font-semibold text-bijedith-black">{{ $procedure->name }}</h3>
-                        <div class="text-sm leading-relaxed text-gray-600">{!! $procedure->description !!}</div>
+                        <div class="text-base leading-relaxed text-gray-600">{!! $procedure->description !!}</div>
                         <a href="#tarieven" class="brand-btn">Bekijk tarieven</a>
                     </div>
                 </article>

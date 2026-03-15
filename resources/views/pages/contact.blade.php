@@ -10,9 +10,9 @@
         <div class="mx-auto grid w-full max-w-6xl gap-8 lg:grid-cols-2">
             <div class="rounded-3xl border border-brand-100 bg-white p-6 shadow-sm lg:p-10">
                 <h2 class="text-2xl font-display font-semibold text-bijedith-black">Salon Bij Edith</h2>
-                <p class="mt-4 text-sm leading-relaxed text-gray-600">Pedicurepraktijk in Lichtenvoorde voor allround pedicurebehandelingen, gespecialiseerde voetzorg en ontspannende spa-arrangementen.</p>
-                <p class="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm leading-relaxed text-amber-900">De salon heeft geen ruimte voor nieuwe vaste klanten. Voor een korte incidentele behandeling kunt u een afspraak plannen middels het online boekingsysteem.</p>
-                <dl class="mt-6 space-y-4 text-sm text-gray-600">
+                <p class="mt-4 text-base leading-relaxed text-gray-600">Pedicurepraktijk in Lichtenvoorde voor allround pedicurebehandelingen, gespecialiseerde voetzorg en ontspannende spa-arrangementen.</p>
+                <p class="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-base leading-relaxed text-amber-900">De salon heeft geen ruimte voor nieuwe vaste klanten. Voor een korte incidentele behandeling kunt u een afspraak plannen middels het online boekingsysteem.</p>
+                <dl class="mt-6 space-y-4 text-base text-gray-600">
                     <div>
                         <dt class="font-semibold text-gray-900">Adres</dt>
                         <dd class="mt-1">Pastoor Sandersstraat 28<br>7131 BV Lichtenvoorde</dd>
@@ -28,7 +28,10 @@
             </div>
 
             <figure class="overflow-hidden rounded-3xl img-zoom">
-                <img class="lazyload h-full w-full object-cover" data-src="/assets/pictures/DCM_0020-pichi.png" alt="Salon Bij Edith" />
+                <picture>
+                    <source data-srcset="/assets/pictures/webp/DCM_0020-pichi.webp" type="image/webp">
+                    <img class="lazyload h-full w-full object-cover" data-src="/assets/pictures/DCM_0020-pichi.png" alt="Salon Bij Edith" />
+                </picture>
             </figure>
         </div>
     </section>

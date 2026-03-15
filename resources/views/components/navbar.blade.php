@@ -4,7 +4,7 @@
             Bij Edith
         </a>
 
-        <ul class="hidden items-center gap-6 text-sm font-medium text-gray-700 md:flex">
+        <ul class="hidden items-center gap-6 text-base font-medium text-gray-700 md:flex">
             <li><a class="transition hover:text-brand-700 {{ request()->routeIs('home') ? 'text-brand-700' : '' }}" href="{{ route('home') }}">Home</a></li>
             <li><a class="transition hover:text-brand-700 {{ request()->routeIs('behandelingen') ? 'text-brand-700' : '' }}" href="{{ route('behandelingen') }}">Behandelingen</a></li>
             <li><a class="transition hover:text-brand-700 {{ request()->routeIs('spa-arrangementen') ? 'text-brand-700' : '' }}" href="{{ route('spa-arrangementen') }}">Spa-arrangementen</a></li>
@@ -15,11 +15,11 @@
         <a class="brand-btn hidden md:inline-flex" href="#sz-booking-open">Afspraak maken</a>
 
         <details class="relative md:hidden">
-            <summary class="inline-flex cursor-pointer items-center rounded-md border border-brand-200 px-3 py-2 text-sm font-medium text-brand-900">
+            <summary class="inline-flex cursor-pointer items-center rounded-md border border-brand-200 px-3 py-2 text-base font-medium text-brand-900">
                 Menu
             </summary>
             <div class="absolute right-0 mt-2 w-64 rounded-xl border border-brand-100 bg-white p-4 shadow-lg">
-                <ul class="space-y-3 text-sm text-gray-700">
+                <ul class="space-y-3 text-base text-gray-700">
                     <li><a class="block transition hover:text-brand-700" href="{{ route('home') }}">Home</a></li>
                     <li><a class="block transition hover:text-brand-700" href="{{ route('behandelingen') }}">Behandelingen</a></li>
                     <li><a class="block transition hover:text-brand-700" href="{{ route('spa-arrangementen') }}">Spa-arrangementen</a></li>

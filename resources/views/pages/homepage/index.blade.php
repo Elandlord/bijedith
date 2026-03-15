@@ -11,7 +11,7 @@
                 </div>
                 <h3 class="text-xl font-display font-semibold text-bijedith-black group-hover:text-brand-700 transition">Behandelingen</h3>
                 <p class="mt-2 text-base text-gray-600">Pedicurebehandelingen, gespecialiseerde voetzorg en praktische adviezen.</p>
-                <span class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-brand-600 transition group-hover:gap-2">Bekijk <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+                <span class="mt-4 inline-flex items-center gap-1 text-base font-medium text-brand-600 transition group-hover:gap-2">Bekijk <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
             </a>
 
             <a href="{{ route('spa-arrangementen') }}" data-scroll data-scroll-delay="2" class="group rounded-2xl border border-brand-100 bg-white p-8 shadow-sm transition hover:shadow-md hover:border-brand-300">
@@ -20,7 +20,7 @@
                 </div>
                 <h3 class="text-xl font-display font-semibold text-bijedith-black group-hover:text-brand-700 transition">Spa-arrangementen</h3>
                 <p class="mt-2 text-base text-gray-600">Ontspannende massages en luxe verwenbehandelingen.</p>
-                <span class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-brand-600 transition group-hover:gap-2">Bekijk <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+                <span class="mt-4 inline-flex items-center gap-1 text-base font-medium text-brand-600 transition group-hover:gap-2">Bekijk <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
             </a>
 
             <a href="{{ route('tarieven') }}" data-scroll data-scroll-delay="3" class="group rounded-2xl border border-brand-100 bg-white p-8 shadow-sm transition hover:shadow-md hover:border-brand-300">
@@ -29,7 +29,7 @@
                 </div>
                 <h3 class="text-xl font-display font-semibold text-bijedith-black group-hover:text-brand-700 transition">Tarieven</h3>
                 <p class="mt-2 text-base text-gray-600">Overzicht van behandelingen en bijbehorende kosten.</p>
-                <span class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-brand-600 transition group-hover:gap-2">Bekijk <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+                <span class="mt-4 inline-flex items-center gap-1 text-base font-medium text-brand-600 transition group-hover:gap-2">Bekijk <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
             </a>
         </div>
     </section>

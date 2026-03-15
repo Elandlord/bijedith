@@ -17,7 +17,7 @@
                         </div>
                         <div class="space-y-3 p-6">
                             <h3 class="text-xl font-display font-semibold text-bijedith-black">{{ $procedure->name }}</h3>
-                            <div class="text-sm leading-relaxed text-gray-600">{!! $procedure->description !!}</div>
+                            <div class="text-base leading-relaxed text-gray-600">{!! $procedure->description !!}</div>
                         </div>
                     </article>
                 @empty

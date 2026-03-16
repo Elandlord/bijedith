@@ -6,13 +6,22 @@
             <span class="section-kicker"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v4"/><path d="M12 18v4"/><path d="m4.93 4.93 2.83 2.83"/><path d="m16.24 16.24 2.83 2.83"/><path d="M2 12h4"/><path d="M18 12h4"/><path d="m4.93 19.07 2.83-2.83"/><path d="m16.24 7.76 2.83-2.83"/></svg> Pedicure & Spa</span>
             <h1 class="section-title text-4xl md:text-5xl">Welkom bij Edith</h1>
             <p class="mt-6 text-base leading-relaxed text-gray-600">
-                Mijn naam is Edith Groothuis. Al ruim 25 jaar werk ik als pedicure en medisch pedicure met een
-                sterke focus op kwaliteit, hygiëne en persoonlijke aandacht. In mijn salon in Lichtenvoorde ben je
-                welkom voor allround pedicurebehandelingen, gespecialiseerde voetzorg en ontspannende spa-arrangementen.
+                Al meer dan 25 jaar werk ik met veel passie als pedicure en medisch pedicure. In mijn salon staan kwaliteit, hygiëne en persoonlijke aandacht centraal. Ik vind het belangrijk dat iedereen zich op zijn gemak voelt en met verzorgde, gezonde voeten de deur uitgaat.
             </p>
             <p class="mt-4 text-base leading-relaxed text-gray-600">
-                Medische voetbehandelingen worden vergoed en de podotherapeut heeft hierin een coördinerende rol.
-                Daarnaast werk ik ambulant voor bewoners van Careaz in Lichtenvoorde.
+                In mijn salon in Lichtenvoorde ben je van harte welkom voor professionele pedicurebehandelingen, gespecialiseerde voetzorg en heerlijke ontspannende spa-arrangementen. Of je nu komt voor een medische behandeling of een moment van ontspanning: jouw voeten krijgen de aandacht die ze verdienen.
+            </p>
+            <p class="mt-4 text-base leading-relaxed text-gray-600">
+                Medische voetbehandelingen kunnen in veel gevallen worden vergoed via de zorgverzekering. De podotherapeut heeft hierin een coördinerende rol.
+            </p>
+            <p class="mt-4 text-base leading-relaxed text-gray-600">
+                Daarnaast werk ik ambulant voor bewoners van Careaz in Lichtenvoorde, zodat ook zij de juiste en professionele voetzorg kunnen ontvangen.
+            </p>
+            <p class="mt-4 text-base leading-relaxed text-gray-600">
+                Gun je voeten de zorg die ze verdienen – ik help je graag verder.
+            </p>
+            <p class="mt-3 font-display text-xl italic text-brand-800">
+                Edith Groothuis
             </p>
             <p class="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-base leading-relaxed text-amber-900">
                 De salon heeft geen ruimte voor nieuwe vaste klanten. Voor een korte incidentele behandeling kunt u een afspraak plannen middels het online boekingsysteem.

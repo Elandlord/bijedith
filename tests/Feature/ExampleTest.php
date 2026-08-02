@@ -20,7 +20,7 @@ class ExampleTest extends TestCase
 
         $response->assertStatus(200);
         $response->assertSee('Bekijk behandelingen');
-        $response->assertSee('Plan contact');
+        $response->assertSee('Plan afspraak');
         $response->assertSee('Spa-arrangementen');
         $response->assertSee('Tarieven');
     }

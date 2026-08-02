@@ -28,7 +28,7 @@ return [
      * If the form is submitted faster than this amount of seconds
      * the form submission will be considered invalid.
      */
-    'amount_of_seconds' => env('php artisan vendor:publish --provider="Spatie\Honeypot\HoneypotServiceProvider" --tag=config', 1),
+    'amount_of_seconds' => env('HONEYPOT_SECONDS', 1),
 
     /*
      * This class is responsible for sending a response to requests that

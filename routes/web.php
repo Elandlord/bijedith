@@ -31,5 +31,5 @@ Route::get('privacyverklaring', function() {
 })->name('privacy');
 
 Route::post('/mail/appointment', [AppointmentController::class, 'index'])
-    ->middleware(ProtectAgainstSpam::class)
+    ->middleware([ProtectAgainstSpam::class, 'throttle:5,1'])
     ->name('mail.appointment');

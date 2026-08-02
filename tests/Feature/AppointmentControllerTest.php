@@ -99,6 +99,21 @@ class AppointmentControllerTest extends TestCase
         Mail::assertNothingSent();
     }
 
+    public function testSixthSubmissionWithinOneMinuteIsRateLimited()
+    {
+        Mail::fake();
+
+        for ($i = 0; $i < 5; $i++) {
+            $response = $this->post('/mail/appointment', $this->validPayload());
+            $response->assertRedirect('/');
+        }
+
+        $response = $this->post('/mail/appointment', $this->validPayload());
+
+        $response->assertStatus(429);
+        Mail::assertSent(AppointmentMail::class, 10);
+    }
+
     public function testMissingMessageIsOptionalAndSucceeds()
     {
         Mail::fake();

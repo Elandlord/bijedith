@@ -23,8 +23,6 @@ Route::get('/spa-arrangementen', [HomeController::class, 'spaArrangementen'])->n
 Route::get('/tarieven', [HomeController::class, 'tarieven'])->name('tarieven');
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 
-//Auth::routes();
-
 Route::get('privacyverklaring', function() {
     return redirect()->to('/assets/documents/privacyverklaring.pdf');
 })->name('privacy');

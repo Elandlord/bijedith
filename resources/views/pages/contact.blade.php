@@ -3,7 +3,9 @@
     @include('components.page-header', [
         'kicker' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> Contact',
         'title' => 'Contact & afspraak',
-        'subtitle' => 'Maak een afspraak via de boekingsknop, of neem contact op via e-mail.',
+        'subtitle' => config('contact.phone')
+            ? 'Maak een afspraak via de boekingsknop, of neem contact op via telefoon of e-mail.'
+            : 'Maak een afspraak via de boekingsknop, of neem contact op via e-mail.',
     ])
 
     <section class="px-4 pb-16 sm:px-6 lg:px-8">
@@ -17,6 +19,12 @@
                         <dt class="font-semibold text-gray-900">Adres</dt>
                         <dd class="mt-1">Pastoor Sandersstraat 28<br>7131 BV Lichtenvoorde</dd>
                     </div>
+                    @if (config('contact.phone'))
+                        <div>
+                            <dt class="font-semibold text-gray-900">Telefoon</dt>
+                            <dd class="mt-1"><a class="text-brand-700 transition hover:text-brand-800" href="tel:{{ config('contact.phone_link') }}">{{ config('contact.phone') }}</a></dd>
+                        </div>
+                    @endif
                     <div>
                         <dt class="font-semibold text-gray-900">E-mail</dt>
                         <dd class="mt-1"><a class="text-brand-700 transition hover:text-brand-800" href="mailto:info@bijedith.nl">info@bijedith.nl</a></dd>

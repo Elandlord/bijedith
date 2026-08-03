@@ -7,6 +7,12 @@
                 gespecialiseerde voetzorg en ontspannende spa-arrangementen.
             </p>
             <p class="mt-3 text-base text-gray-700">Pastoor Sandersstraat 28, 7131 BV Lichtenvoorde</p>
+            @if (config('contact.phone'))
+                <p class="mt-3 text-base text-gray-700">
+                    Telefoon:
+                    <a class="text-brand-700 transition hover:text-brand-800" href="tel:{{ config('contact.phone_link') }}">{{ config('contact.phone') }}</a>
+                </p>
+            @endif
         </div>
 
         <div>

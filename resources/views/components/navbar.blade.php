@@ -12,7 +12,12 @@
             <li><a class="transition hover:text-brand-700 {{ request()->routeIs('contact') ? 'text-brand-700' : '' }}" href="{{ route('contact') }}">Contact</a></li>
         </ul>
 
-        <a class="brand-btn hidden md:inline-flex" href="#sz-booking-open">Afspraak maken</a>
+        <div class="hidden items-center gap-4 md:flex">
+            @if (config('contact.phone'))
+                <a class="text-base font-medium text-brand-700 transition hover:text-brand-800" href="tel:{{ config('contact.phone_link') }}">{{ config('contact.phone') }}</a>
+            @endif
+            <a class="brand-btn" href="#sz-booking-open">Afspraak maken</a>
+        </div>
 
         <details class="relative md:hidden">
             <summary class="inline-flex cursor-pointer items-center rounded-md border border-brand-200 px-3 py-2 text-base font-medium text-brand-900">
@@ -26,6 +31,9 @@
                     <li><a class="block transition hover:text-brand-700" href="{{ route('tarieven') }}">Tarieven</a></li>
                     <li><a class="block transition hover:text-brand-700" href="{{ route('contact') }}">Contact</a></li>
                     <li><a class="block font-semibold text-brand-700" href="#sz-booking-open">Afspraak maken</a></li>
+                    @if (config('contact.phone'))
+                        <li><a class="block font-semibold text-brand-700" href="tel:{{ config('contact.phone_link') }}">Bel {{ config('contact.phone') }}</a></li>
+                    @endif
                 </ul>
             </div>
         </details>

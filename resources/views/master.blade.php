@@ -16,6 +16,7 @@
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"></noscript>
     <link rel="preload" href="{{ mix('/css/app.css') }}" as="style">
     <link rel="stylesheet" type="text/css" href="{{ mix('/css/app.css') }}">
+    <noscript><style>[data-booking-fallback][hidden] { display: block !important; }</style></noscript>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NG5XWRCFNG"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -37,13 +38,59 @@
 
     <main>
         @yield('content')
+
+        @include('components.appointment-fallback')
     </main>
 
     @include('components.footer')
 </div>
 
 <div class="salonized-booking" data-company="avMXRDrsiQtTjmmxqfcCpTpk" data-color="#4f9fb8" data-language="nl" data-outline="shadow"></div>
+<script>
+    (function () {
+        var FALLBACK_DELAY_MS = 8000;
+        var revealed = false;
+
+        function widgetHasRendered() {
+            var widget = document.querySelector('.salonized-booking');
+
+            return !!widget && widget.children.length > 0;
+        }
+
+        function revealFallback() {
+            if (revealed) {
+                return;
+            }
+
+            revealed = true;
+
+            var fallback = document.getElementById('afspraak-formulier');
+
+            if (!fallback) {
+                return;
+            }
+
+            fallback.removeAttribute('hidden');
+
+            var ctas = document.querySelectorAll('a[href="#sz-booking-open"]');
+
+            for (var i = 0; i < ctas.length; i++) {
+                ctas[i].setAttribute('href', '#afspraak-formulier');
+            }
+        }
+
+        window.salonizedWidgetFailed = revealFallback;
+
+        window.addEventListener('load', function () {
+            window.setTimeout(function () {
+                if (!widgetHasRendered()) {
+                    revealFallback();
+                }
+            }, FALLBACK_DELAY_MS);
+        });
+    })();
+</script>
 <script defer src="{{ mix('/js/app.js') }}"></script>
-<script defer src="https://static-widget.salonized.com/loader.js"></script>
+<script defer src="https://static-widget.salonized.com/loader.js" onerror="window.salonizedWidgetFailed()"></script>
 </body>
 </html>

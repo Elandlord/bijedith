@@ -65,6 +65,20 @@ return [
             'endpoint' => env('AWS_ENDPOINT'),
         ],
 
+        'treatment_images' => [
+            'driver' => 'local',
+            'root' => public_path('assets/pictures'),
+            'url' => '/assets/pictures',
+            'visibility' => 'public',
+        ],
+
+        'treatment_images_webp' => [
+            'driver' => 'local',
+            'root' => public_path('assets/pictures/webp'),
+            'url' => '/assets/pictures/webp',
+            'visibility' => 'public',
+        ],
+
     ],
 
     /*

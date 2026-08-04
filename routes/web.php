@@ -3,7 +3,9 @@
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\Admin\TreatmentController;
 use App\Http\Controllers\AppointmentController;
+use App\Http\Controllers\Auth\LoginController;
 use Spatie\Honeypot\ProtectAgainstSpam;
 
 /*
@@ -30,3 +32,11 @@ Route::get('privacyverklaring', function() {
 Route::post('/mail/appointment', [AppointmentController::class, 'index'])
     ->middleware([ProtectAgainstSpam::class, 'throttle:5,1'])
     ->name('mail.appointment');
+
+Route::get('/admin/login', [LoginController::class, 'showLoginForm'])->middleware('guest')->name('login');
+Route::post('/admin/login', [LoginController::class, 'login'])->middleware('guest');
+Route::post('/admin/logout', [LoginController::class, 'logout'])->middleware('auth')->name('logout');
+
+Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
+    Route::resource('treatments', TreatmentController::class)->except(['show']);
+});

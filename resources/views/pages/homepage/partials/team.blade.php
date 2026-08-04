@@ -9,15 +9,17 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-md-4">
-                <div class="single-memb">
-                    <img data-src="/assets/pictures/DCM_9970-pichi.png" class="lazyload" alt="" />
-                    <div class="memb-details">
-                        <h6>Edith Groothuis</h6>
-                        <span>Schoonheidsspecialiste</span>
+            @foreach($teamMembers as $member)
+                <div class="col-md-4">
+                    <div class="single-memb">
+                        <img data-src="{{ $member->image_path }}" class="lazyload" alt="" />
+                        <div class="memb-details">
+                            <h6>{{ $member->name }}</h6>
+                            <span>{{ $member->role }}</span>
+                        </div>
                     </div>
                 </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </section>

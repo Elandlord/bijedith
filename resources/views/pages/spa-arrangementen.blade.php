@@ -10,12 +10,11 @@
         <div class="mx-auto w-full max-w-6xl">
             <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 @forelse($spaprocedures as $procedure)
-                    @php $procedure = (object) $procedure; @endphp
                     <article class="overflow-hidden rounded-2xl border border-brand-100 bg-white shadow-sm">
                         <div class="img-zoom">
                             <picture>
-                                <source data-srcset="{{ $procedure->webp_img }}" type="image/webp">
-                                <img data-src="{{ $procedure->img }}" class="lazyload h-56 w-full object-cover" alt="" />
+                                <source data-srcset="{{ $procedure->webp_image_path }}" type="image/webp">
+                                <img data-src="{{ $procedure->image_path }}" class="lazyload h-56 w-full object-cover" alt="" />
                             </picture>
                         </div>
                         <div class="space-y-3 p-6">

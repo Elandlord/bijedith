@@ -2,12 +2,16 @@
 
 namespace Tests\Feature;
 
+use App\Appointment;
 use App\Mail\AppointmentMail;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Mail;
 use Tests\TestCase;
 
 class AppointmentControllerTest extends TestCase
 {
+    use RefreshDatabase;
+
     private const INFO_EMAIL = 'info@bijedith.nl';
 
     private function validPayload(array $overrides = [])
@@ -39,6 +43,35 @@ class AppointmentControllerTest extends TestCase
         Mail::assertSent(AppointmentMail::class, 2);
     }
 
+    public function testValidPayloadPersistsAppointment()
+    {
+        Mail::fake();
+
+        $this->post('/mail/appointment', $this->validPayload());
+
+        $this->assertDatabaseHas('appointments', [
+            'name'      => 'Jane Doe',
+            'email'     => 'jane@example.com',
+            'procedure' => 'pedicure',
+            'phone'     => '0612345678',
+        ]);
+    }
+
+    public function testAppointmentIsStillPersistedWhenMailSendingFails()
+    {
+        Mail::shouldReceive('to')->andThrow(new \RuntimeException('SMTP unavailable'));
+
+        $response = $this->post('/mail/appointment', $this->validPayload());
+
+        $response->assertRedirect('/');
+        $response->assertSessionHas('success');
+
+        $this->assertDatabaseHas('appointments', [
+            'email' => 'jane@example.com',
+        ]);
+        $this->assertSame(1, Appointment::count());
+    }
+
     public function testMissingNameFailsValidation()
     {
         Mail::fake();
@@ -47,6 +80,7 @@ class AppointmentControllerTest extends TestCase
 
         $response->assertSessionHasErrors(['name']);
         Mail::assertNothingSent();
+        $this->assertSame(0, Appointment::count());
     }
 
     public function testMissingEmailFailsValidation()

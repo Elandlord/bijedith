@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Appointment;
 use App\Http\Requests\AppointmentRequest;
+use App\Mail\AppointmentConfirmationMail;
 use App\Mail\AppointmentMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -31,8 +32,16 @@ class AppointmentController extends Controller
             $appointment->message
         );
 
+        $confirmationMail = new AppointmentConfirmationMail(
+            $appointment->name,
+            $appointment->email,
+            $appointment->procedure,
+            $appointment->phone,
+            $appointment->message
+        );
+
         try {
-            Mail::to($appointment->email)->send($mail);
+            Mail::to($appointment->email)->send($confirmationMail);
             Mail::to('info@bijedith.nl')->send($mail);
         } catch (Throwable $exception) {
             Log::error('Failed to send appointment mail.', [

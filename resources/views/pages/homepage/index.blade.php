@@ -35,5 +35,6 @@
     </section>
 
     @include('pages.homepage.partials.treatments')
+    @include('pages.homepage.partials.testimonials')
     @include('pages.homepage.partials.appointments')
 @endsection

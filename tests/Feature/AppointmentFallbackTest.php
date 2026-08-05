@@ -2,11 +2,14 @@
 
 namespace Tests\Feature;
 
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Mail;
 use Tests\TestCase;
 
 class AppointmentFallbackTest extends TestCase
 {
+    use RefreshDatabase;
+
     private const FALLBACK_ID = 'id="afspraak-formulier"';
 
     public function testHomepageRendersTheFallbackFormHiddenByDefault()

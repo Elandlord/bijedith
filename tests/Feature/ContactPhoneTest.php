@@ -2,10 +2,13 @@
 
 namespace Tests\Feature;
 
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
 class ContactPhoneTest extends TestCase
 {
+    use RefreshDatabase;
+
     private const PHONE = '0544 37 12 34';
 
     private const PHONE_LINK = 'tel:0544371234';

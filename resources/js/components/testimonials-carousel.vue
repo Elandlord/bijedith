@@ -7,11 +7,21 @@
                 class="single-tst testimonial-slide"
                 :class="{ 'is-active': index === activeIndex }"
             >
-                <img data-src="/assets/images/quote.png" class="lazyload quote" alt="" />
+                <img
+                    data-src="/assets/images/quote.png"
+                    class="lazyload quote"
+                    alt=""
+                />
                 <p>{{ slide.quote }}</p>
                 <div class="client-info">
-                    <img data-src="/assets/images/person_1.jpg" alt="" class="thumb lazyload" />
-                    <p>{{ slide.author }}, <span>{{ slide.role }}</span></p>
+                    <img
+                        data-src="/assets/images/person_1.jpg"
+                        alt=""
+                        class="thumb lazyload"
+                    />
+                    <p>
+                        {{ slide.author }}, <span>{{ slide.role }}</span>
+                    </p>
                 </div>
             </article>
         </div>
@@ -20,29 +30,25 @@
 
 <script>
 export default {
+    props: {
+        testimonials: {
+            type: String,
+            default: "[]",
+        },
+    },
+
     data() {
         return {
             activeIndex: 0,
             autoplayMs: 5500,
             intervalId: null,
-            slides: [
-                {
-                    quote: 'Ik werd zeer gastvrij ontvangen in een mooie, verzorgde spa.',
-                    author: 'Eric Landheer',
-                    role: 'software-ontwikkelaar',
-                },
-                {
-                    quote: 'Rust, vakmanschap en persoonlijke aandacht in elke behandeling.',
-                    author: 'Anonieme client',
-                    role: 'vaste klant',
-                },
-                {
-                    quote: 'Een fijne plek waar je echt met lichte voeten naar buiten loopt.',
-                    author: 'Anonieme client',
-                    role: 'bezoeker',
-                },
-            ],
         };
+    },
+
+    computed: {
+        slides() {
+            return JSON.parse(this.testimonials);
+        },
     },
 
     mounted() {
@@ -60,7 +66,10 @@ export default {
             }
 
             this.intervalId = window.setInterval(() => {
-                this.activeIndex = this.activeIndex >= this.slides.length - 1 ? 0 : this.activeIndex + 1;
+                this.activeIndex =
+                    this.activeIndex >= this.slides.length - 1
+                        ? 0
+                        : this.activeIndex + 1;
                 this.scrollToActive();
             }, this.autoplayMs);
         },
@@ -88,7 +97,7 @@ export default {
             }
 
             track.scrollTo({
-                behavior: 'smooth',
+                behavior: "smooth",
                 left: firstChild.clientWidth * this.activeIndex,
             });
         },

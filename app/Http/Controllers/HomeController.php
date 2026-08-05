@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Testimonial;
 use App\Treatment;
 use Illuminate\Contracts\Support\Renderable;
 
@@ -9,7 +10,9 @@ class HomeController extends Controller
 {
     public function index(): Renderable
     {
-        return view('pages.homepage.index');
+        $testimonials = Testimonial::approved()->latest('approved_at')->get();
+
+        return view('pages.homepage.index', compact('testimonials'));
     }
 
     public function behandelingen(): Renderable

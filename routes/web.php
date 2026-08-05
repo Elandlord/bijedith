@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Admin\TreatmentController;
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -30,3 +32,11 @@ Route::get('privacyverklaring', function() {
 Route::post('/mail/appointment', [AppointmentController::class, 'index'])
     ->middleware([ProtectAgainstSpam::class, 'throttle:5,1'])
     ->name('mail.appointment');
+
+Route::get('/login', [LoginController::class, 'create'])->middleware('guest')->name('login');
+Route::post('/login', [LoginController::class, 'store'])->middleware('guest');
+Route::post('/logout', [LoginController::class, 'destroy'])->middleware('auth')->name('logout');
+
+Route::prefix('admin')->name('admin.')->middleware('auth')->group(function () {
+    Route::resource('treatments', TreatmentController::class)->except(['show']);
+});

@@ -3,6 +3,7 @@
 namespace Tests\Feature;
 
 use App\Appointment;
+use App\Mail\AppointmentConfirmationMail;
 use App\Mail\AppointmentMail;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Mail;
@@ -34,13 +35,12 @@ class AppointmentControllerTest extends TestCase
         $response->assertRedirect('/');
         $response->assertSessionHas('success');
 
-        Mail::assertSent(AppointmentMail::class, function ($mail) {
+        Mail::assertSent(AppointmentConfirmationMail::class, function ($mail) {
             return $mail->hasTo('jane@example.com');
         });
         Mail::assertSent(AppointmentMail::class, function ($mail) {
             return $mail->hasTo(self::INFO_EMAIL);
         });
-        Mail::assertSent(AppointmentMail::class, 2);
     }
 
     public function testValidPayloadPersistsAppointment()
@@ -145,7 +145,8 @@ class AppointmentControllerTest extends TestCase
         $response = $this->post('/mail/appointment', $this->validPayload());
 
         $response->assertStatus(429);
-        Mail::assertSent(AppointmentMail::class, 10);
+        Mail::assertSent(AppointmentConfirmationMail::class, 5);
+        Mail::assertSent(AppointmentMail::class, 5);
     }
 
     public function testMissingMessageIsOptionalAndSucceeds()
@@ -159,6 +160,11 @@ class AppointmentControllerTest extends TestCase
 
         $response->assertRedirect('/');
         $response->assertSessionHas('success');
-        Mail::assertSent(AppointmentMail::class, 2);
+        Mail::assertSent(AppointmentConfirmationMail::class, function ($mail) {
+            return $mail->hasTo('jane@example.com');
+        });
+        Mail::assertSent(AppointmentMail::class, function ($mail) {
+            return $mail->hasTo(self::INFO_EMAIL);
+        });
     }
 }

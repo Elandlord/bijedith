@@ -54,7 +54,9 @@
 
             <div class="flex flex-wrap gap-3">
                 <button class="brand-btn" type="submit">Versturen</button>
-                <a class="brand-btn-outline" href="tel:0544-373326">Of bel: 0544-373326</a>
+                @if (config('contact.phone'))
+                    <a class="brand-btn-outline" href="tel:{{ config('contact.phone_link') }}">Of bel: {{ config('contact.phone') }}</a>
+                @endif
             </div>
         </form>
     </div>

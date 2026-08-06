@@ -31,8 +31,13 @@
                     <span class="text-base font-medium text-gray-900">Behandeling</span>
                     <select class="mt-1 w-full rounded-xl border border-brand-100 px-4 py-3 text-base text-gray-900" name="procedure" required>
                         <option value="" disabled @if (! old('procedure')) selected @endif>Selecteer behandeling</option>
-                        <option value="pedicure" @if (old('procedure') === 'pedicure') selected @endif>Pedicure</option>
-                        <option value="spabehandeling" @if (old('procedure') === 'spabehandeling') selected @endif>Spabehandeling</option>
+                        @foreach (\App\Treatment::orderBy('type')->orderBy('name')->get()->groupBy('type') as $type => $treatments)
+                            <optgroup label="{{ ucfirst($type) }}">
+                                @foreach ($treatments as $treatment)
+                                    <option value="{{ $treatment->name }}" @if (old('procedure') === $treatment->name) selected @endif>{{ $treatment->name }}</option>
+                                @endforeach
+                            </optgroup>
+                        @endforeach
                     </select>
                 </label>
 

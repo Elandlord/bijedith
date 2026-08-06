@@ -5,6 +5,7 @@ namespace Tests\Feature;
 use App\Appointment;
 use App\Mail\AppointmentConfirmationMail;
 use App\Mail\AppointmentMail;
+use App\Treatment;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Mail;
 use Tests\TestCase;
@@ -128,6 +129,40 @@ class AppointmentControllerTest extends TestCase
         Mail::fake();
 
         $response = $this->post('/mail/appointment', $this->validPayload(['procedure' => 'massage']));
+
+        $response->assertSessionHasErrors(['procedure']);
+        Mail::assertNothingSent();
+    }
+
+    public function testProcedureAcceptsAnExistingTreatmentName()
+    {
+        Mail::fake();
+
+        $treatment = Treatment::create([
+            'type'        => 'spa',
+            'name'        => 'Sparkling-arrangement',
+            'description' => 'Beschrijving',
+            'image'       => '/assets/pictures/spa.png',
+        ]);
+
+        $response = $this->post('/mail/appointment', $this->validPayload(['procedure' => $treatment->name]));
+
+        $response->assertRedirect('/');
+        $response->assertSessionHas('success');
+    }
+
+    public function testProcedureRejectsANameThatIsNotAKnownTreatmentWhenTreatmentsExist()
+    {
+        Mail::fake();
+
+        Treatment::create([
+            'type'        => 'spa',
+            'name'        => 'Sparkling-arrangement',
+            'description' => 'Beschrijving',
+            'image'       => '/assets/pictures/spa.png',
+        ]);
+
+        $response = $this->post('/mail/appointment', $this->validPayload(['procedure' => 'pedicure']));
 
         $response->assertSessionHasErrors(['procedure']);
         Mail::assertNothingSent();

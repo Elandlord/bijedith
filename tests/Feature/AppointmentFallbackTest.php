@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use App\Treatment;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Mail;
 use Tests\TestCase;
@@ -38,6 +39,29 @@ class AppointmentFallbackTest extends TestCase
 
         $response->assertSee('onerror="window.salonizedWidgetFailed()"', false);
         $response->assertSee('[data-booking-fallback][hidden] { display: block !important; }', false);
+    }
+
+    public function testFallbackFormListsTreatmentsFromTheDatabaseGroupedByType()
+    {
+        $pedicure = Treatment::create([
+            'type'        => 'pedicure',
+            'name'        => 'Gespecialiseerde pedicurebehandeling',
+            'description' => 'Beschrijving',
+            'image'       => '/assets/pictures/pedicure.png',
+        ]);
+        $spa = Treatment::create([
+            'type'        => 'spa',
+            'name'        => 'Sparkling-arrangement',
+            'description' => 'Beschrijving',
+            'image'       => '/assets/pictures/spa.png',
+        ]);
+
+        $response = $this->get('/');
+
+        $response->assertSee('<option value="' . $pedicure->name . '"', false);
+        $response->assertSee('<option value="' . $spa->name . '"', false);
+        $response->assertDontSee('<option value="pedicure"', false);
+        $response->assertDontSee('<option value="spabehandeling"', false);
     }
 
     public function testFallbackFormIsRevealedWhenSubmissionFailsValidation()

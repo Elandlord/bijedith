@@ -8,6 +8,7 @@ use App\Testimonial;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\URL;
 
 class TestimonialController extends Controller
 {
@@ -27,6 +28,15 @@ class TestimonialController extends Controller
         Mail::to('info@bijedith.nl')->send(new TestimonialApprovalMail($testimonial));
 
         return redirect()->route('testimonials.create')->with('success', 'Bedankt voor uw review! Deze wordt na goedkeuring op de website geplaatst.');
+    }
+
+    public function review(Testimonial $testimonial): Renderable
+    {
+        return view('pages.testimonial-review', [
+            'testimonial' => $testimonial,
+            'approveUrl'  => URL::signedRoute('testimonials.approve', ['testimonial' => $testimonial->id]),
+            'rejectUrl'   => URL::signedRoute('testimonials.reject', ['testimonial' => $testimonial->id]),
+        ]);
     }
 
     public function approve(Testimonial $testimonial): RedirectResponse

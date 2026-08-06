@@ -14,8 +14,7 @@ class TestimonialApprovalMail extends Mailable
     use Queueable, SerializesModels;
 
     public $testimonial;
-    public $approveUrl;
-    public $rejectUrl;
+    public $reviewUrl;
 
     /**
      * Create a new message instance.
@@ -25,8 +24,7 @@ class TestimonialApprovalMail extends Mailable
     public function __construct(Testimonial $testimonial)
     {
         $this->testimonial = $testimonial;
-        $this->approveUrl = URL::signedRoute('testimonials.approve', ['testimonial' => $testimonial->id]);
-        $this->rejectUrl = URL::signedRoute('testimonials.reject', ['testimonial' => $testimonial->id]);
+        $this->reviewUrl = URL::signedRoute('testimonials.review', ['testimonial' => $testimonial->id]);
     }
 
     /**

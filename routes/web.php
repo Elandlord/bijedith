@@ -38,10 +38,13 @@ Route::get('/ervaring-delen', [TestimonialController::class, 'create'])->name('t
 Route::post('/mail/testimonial', [TestimonialController::class, 'store'])
     ->middleware([ProtectAgainstSpam::class, 'throttle:5,1'])
     ->name('mail.testimonial');
-Route::get('/testimonials/{testimonial}/approve', [TestimonialController::class, 'approve'])
+Route::get('/testimonials/{testimonial}/review', [TestimonialController::class, 'review'])
+    ->middleware('signed')
+    ->name('testimonials.review');
+Route::post('/testimonials/{testimonial}/approve', [TestimonialController::class, 'approve'])
     ->middleware('signed')
     ->name('testimonials.approve');
-Route::get('/testimonials/{testimonial}/reject', [TestimonialController::class, 'reject'])
+Route::post('/testimonials/{testimonial}/reject', [TestimonialController::class, 'reject'])
     ->middleware('signed')
     ->name('testimonials.reject');
 Route::get('/login', [LoginController::class, 'create'])->middleware('guest')->name('login');

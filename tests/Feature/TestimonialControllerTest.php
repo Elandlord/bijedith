@@ -115,7 +115,7 @@ class TestimonialControllerTest extends TestCase
         $testimonial = Testimonial::create($this->validPayload());
         $url = URL::signedRoute('testimonials.approve', ['testimonial' => $testimonial->id]);
 
-        $response = $this->get($url);
+        $response = $this->post($url);
 
         $response->assertRedirect(route('home'));
         $this->assertNotNull($testimonial->fresh()->approved_at);
@@ -125,7 +125,7 @@ class TestimonialControllerTest extends TestCase
     {
         $testimonial = Testimonial::create($this->validPayload());
 
-        $response = $this->get("/testimonials/{$testimonial->id}/approve");
+        $response = $this->post("/testimonials/{$testimonial->id}/approve");
 
         $response->assertStatus(403);
         $this->assertNull($testimonial->fresh()->approved_at);
@@ -136,7 +136,7 @@ class TestimonialControllerTest extends TestCase
         $testimonial = Testimonial::create($this->validPayload());
         $url = URL::signedRoute('testimonials.reject', ['testimonial' => $testimonial->id]);
 
-        $response = $this->get($url);
+        $response = $this->post($url);
 
         $response->assertRedirect(route('home'));
         $this->assertDatabaseMissing('testimonials', ['id' => $testimonial->id]);
@@ -146,9 +146,21 @@ class TestimonialControllerTest extends TestCase
     {
         $testimonial = Testimonial::create($this->validPayload());
 
-        $response = $this->get("/testimonials/{$testimonial->id}/reject");
+        $response = $this->post("/testimonials/{$testimonial->id}/reject");
 
         $response->assertStatus(403);
+        $this->assertDatabaseHas('testimonials', ['id' => $testimonial->id]);
+    }
+
+    public function testValidSignedReviewUrlDoesNotMutateTheTestimonial()
+    {
+        $testimonial = Testimonial::create($this->validPayload());
+        $url = URL::signedRoute('testimonials.review', ['testimonial' => $testimonial->id]);
+
+        $response = $this->get($url);
+
+        $response->assertStatus(200);
+        $this->assertNull($testimonial->fresh()->approved_at);
         $this->assertDatabaseHas('testimonials', ['id' => $testimonial->id]);
     }
 }

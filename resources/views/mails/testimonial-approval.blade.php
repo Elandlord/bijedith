@@ -9,14 +9,10 @@ Er is een nieuwe review binnengekomen voor BijEdith.
 <strong>Review:</strong> {{ $testimonial->quote }}
 @endcomponent
 
-Keur de review goed om deze op de website te tonen, of wijs de review af.
+Bekijk de review om deze goed te keuren of af te wijzen.
 
-@component('mail::button', ['url' => $approveUrl])
-Goedkeuren
-@endcomponent
-
-@component('mail::button', ['url' => $rejectUrl, 'color' => 'error'])
-Afwijzen
+@component('mail::button', ['url' => $reviewUrl])
+Review bekijken
 @endcomponent
 
 Vriendelijke groet,<br>

@@ -168,6 +168,32 @@ class AppointmentControllerTest extends TestCase
         Mail::assertNothingSent();
     }
 
+    public function testProcedureAcceptsAFallbackProcedureWhenNoTreatmentsExist()
+    {
+        Mail::fake();
+
+        Treatment::query()->delete();
+        $this->assertSame(0, Treatment::count());
+
+        $response = $this->post('/mail/appointment', $this->validPayload(['procedure' => 'pedicure']));
+
+        $response->assertRedirect('/');
+        $response->assertSessionHas('success');
+    }
+
+    public function testProcedureRejectsANameThatIsNotAFallbackProcedureWhenNoTreatmentsExist()
+    {
+        Mail::fake();
+
+        Treatment::query()->delete();
+        $this->assertSame(0, Treatment::count());
+
+        $response = $this->post('/mail/appointment', $this->validPayload(['procedure' => 'massage']));
+
+        $response->assertSessionHasErrors(['procedure']);
+        Mail::assertNothingSent();
+    }
+
     public function testSixthSubmissionWithinOneMinuteIsRateLimited()
     {
         Mail::fake();

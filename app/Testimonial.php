@@ -13,7 +13,7 @@ class Testimonial extends Model
      * @var array
      */
     protected $fillable = [
-        'author', 'role', 'quote', 'approved_at',
+        'author', 'role', 'quote',
     ];
 
     /**

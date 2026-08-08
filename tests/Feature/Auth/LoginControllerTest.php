@@ -45,6 +45,30 @@ class LoginControllerTest extends TestCase
         $this->assertGuest();
     }
 
+    public function testSixthSubmissionWithinOneMinuteIsRateLimited()
+    {
+        User::create([
+            'name'     => 'Edith',
+            'email'    => 'edith@bijedith.nl',
+            'password' => Hash::make('correct-password'),
+        ]);
+
+        for ($i = 0; $i < 5; $i++) {
+            $response = $this->post('/login', [
+                'email'    => 'edith@bijedith.nl',
+                'password' => 'wrong-password',
+            ]);
+            $response->assertSessionHasErrors(['email']);
+        }
+
+        $response = $this->post('/login', [
+            'email'    => 'edith@bijedith.nl',
+            'password' => 'wrong-password',
+        ]);
+
+        $response->assertStatus(429);
+    }
+
     public function testAuthenticatedUserCanLogOut()
     {
         $user = User::create([

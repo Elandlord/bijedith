@@ -82,6 +82,19 @@ class TestimonialControllerTest extends TestCase
         Mail::assertNothingSent();
     }
 
+    public function testApprovedAtCannotBeSetViaSubmission()
+    {
+        Mail::fake();
+
+        $response = $this->post('/mail/testimonial', $this->validPayload(['approved_at' => now()]));
+
+        $response->assertRedirect(route('testimonials.create'));
+        $this->assertDatabaseHas('testimonials', [
+            'author'      => 'Jane Doe',
+            'approved_at' => null,
+        ]);
+    }
+
     public function testMissingRoleIsOptionalAndSucceeds()
     {
         Mail::fake();

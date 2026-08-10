@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
 class TreatmentRequest extends FormRequest
 {
@@ -27,7 +28,12 @@ class TreatmentRequest extends FormRequest
 
         return [
             'type'        => 'required|in:pedicure,spa',
-            'name'        => 'required|min:2|max:255',
+            'name'        => [
+                'required',
+                'min:2',
+                'max:255',
+                Rule::unique('treatments', 'name')->ignore($this->route('treatment')),
+            ],
             'description' => 'required',
             'image'       => $imageRule . '|image|max:4096',
         ];

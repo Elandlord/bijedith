@@ -40,6 +40,7 @@ class AppointmentMail extends Mailable
     {
         return $this
             ->from('info@bijedith.nl')
+            ->replyTo($this->email, $this->name)
             ->subject('Nieuwe aanvraag voor behandeling')
             ->markdown('mails.appointment');
     }

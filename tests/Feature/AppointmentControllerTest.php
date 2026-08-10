@@ -40,7 +40,7 @@ class AppointmentControllerTest extends TestCase
             return $mail->hasTo('jane@example.com');
         });
         Mail::assertSent(AppointmentMail::class, function ($mail) {
-            return $mail->hasTo(self::INFO_EMAIL);
+            return $mail->hasTo(self::INFO_EMAIL) && $mail->hasReplyTo('jane@example.com');
         });
     }
 

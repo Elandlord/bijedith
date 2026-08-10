@@ -64,6 +64,28 @@ class TreatmentControllerTest extends TestCase
         $this->assertDatabaseMissing('treatments', ['name' => 'Nieuwe behandeling']);
     }
 
+    public function testCreatingTreatmentWithDuplicateNameFailsValidation()
+    {
+        Storage::fake('public');
+
+        Treatment::create([
+            'type'        => 'pedicure',
+            'name'        => 'Bestaande behandeling',
+            'description' => 'Een omschrijving',
+            'image'       => UploadedFile::fake()->image('old.jpg')->store('treatments', 'public'),
+        ]);
+
+        $response = $this->actingAs($this->user())->post('/admin/treatments', [
+            'type'        => 'pedicure',
+            'name'        => 'Bestaande behandeling',
+            'description' => 'Een andere omschrijving',
+            'image'       => UploadedFile::fake()->image('treatment.jpg'),
+        ]);
+
+        $response->assertSessionHasErrors(['name']);
+        $this->assertDatabaseMissing('treatments', ['description' => 'Een andere omschrijving']);
+    }
+
     public function testAuthenticatedUserCanUpdateTreatmentWithoutReplacingImage()
     {
         Storage::fake('public');
@@ -85,6 +107,31 @@ class TreatmentControllerTest extends TestCase
         $this->assertDatabaseHas('treatments', [
             'id'   => $treatment->id,
             'name' => 'Nieuwe naam',
+        ]);
+    }
+
+    public function testAuthenticatedUserCanUpdateTreatmentKeepingItsOwnName()
+    {
+        Storage::fake('public');
+
+        $treatment = Treatment::create([
+            'type'        => 'spa',
+            'name'        => 'Ongewijzigde naam',
+            'description' => 'Oude omschrijving',
+            'image'       => UploadedFile::fake()->image('old.jpg')->store('treatments', 'public'),
+        ]);
+
+        $response = $this->actingAs($this->user())->put("/admin/treatments/{$treatment->id}", [
+            'type'        => 'spa',
+            'name'        => 'Ongewijzigde naam',
+            'description' => 'Nieuwe omschrijving',
+        ]);
+
+        $response->assertRedirect(route('admin.treatments.index'));
+        $this->assertDatabaseHas('treatments', [
+            'id'          => $treatment->id,
+            'name'        => 'Ongewijzigde naam',
+            'description' => 'Nieuwe omschrijving',
         ]);
     }
 

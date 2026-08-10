@@ -144,6 +144,17 @@ class TestimonialControllerTest extends TestCase
         $this->assertNull($testimonial->fresh()->approved_at);
     }
 
+    public function testExpiredApprovalUrlIsForbidden()
+    {
+        $testimonial = Testimonial::create($this->validPayload());
+        $url = URL::temporarySignedRoute('testimonials.approve', now()->addDays(7), ['testimonial' => $testimonial->id]);
+
+        $response = $this->travel(8)->days()->post($url);
+
+        $response->assertStatus(403);
+        $this->assertNull($testimonial->fresh()->approved_at);
+    }
+
     public function testValidSignedUrlRejectsAndDeletesTheTestimonial()
     {
         $testimonial = Testimonial::create($this->validPayload());
@@ -160,6 +171,17 @@ class TestimonialControllerTest extends TestCase
         $testimonial = Testimonial::create($this->validPayload());
 
         $response = $this->post("/testimonials/{$testimonial->id}/reject");
+
+        $response->assertStatus(403);
+        $this->assertDatabaseHas('testimonials', ['id' => $testimonial->id]);
+    }
+
+    public function testExpiredRejectionUrlIsForbidden()
+    {
+        $testimonial = Testimonial::create($this->validPayload());
+        $url = URL::temporarySignedRoute('testimonials.reject', now()->addDays(7), ['testimonial' => $testimonial->id]);
+
+        $response = $this->travel(8)->days()->post($url);
 
         $response->assertStatus(403);
         $this->assertDatabaseHas('testimonials', ['id' => $testimonial->id]);

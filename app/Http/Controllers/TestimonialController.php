@@ -34,8 +34,8 @@ class TestimonialController extends Controller
     {
         return view('pages.testimonial-review', [
             'testimonial' => $testimonial,
-            'approveUrl'  => URL::signedRoute('testimonials.approve', ['testimonial' => $testimonial->id]),
-            'rejectUrl'   => URL::signedRoute('testimonials.reject', ['testimonial' => $testimonial->id]),
+            'approveUrl'  => URL::temporarySignedRoute('testimonials.approve', now()->addDays(7), ['testimonial' => $testimonial->id]),
+            'rejectUrl'   => URL::temporarySignedRoute('testimonials.reject', now()->addDays(7), ['testimonial' => $testimonial->id]),
         ]);
     }
 

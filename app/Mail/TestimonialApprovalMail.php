@@ -24,7 +24,7 @@ class TestimonialApprovalMail extends Mailable
     public function __construct(Testimonial $testimonial)
     {
         $this->testimonial = $testimonial;
-        $this->reviewUrl = URL::signedRoute('testimonials.review', ['testimonial' => $testimonial->id]);
+        $this->reviewUrl = URL::temporarySignedRoute('testimonials.review', now()->addDays(7), ['testimonial' => $testimonial->id]);
     }
 
     /**

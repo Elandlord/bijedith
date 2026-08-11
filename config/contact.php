@@ -13,4 +13,9 @@ return [
      * The same number stripped down to a value that is valid inside a tel: link.
      */
     'phone_link' => $phone ? preg_replace('/[^0-9+]/', '', $phone) : null,
+
+    /*
+     * The e-mail address that receives appointment requests and is shown to visitors.
+     */
+    'email' => env('CONTACT_EMAIL', 'info@bijedith.nl'),
 ];

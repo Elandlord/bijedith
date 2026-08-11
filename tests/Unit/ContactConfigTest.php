@@ -16,9 +16,16 @@ class ContactConfigTest extends TestCase
 
     private const INTERNATIONAL_PHONE_LINK = '+31612345678';
 
+    private const EMAIL_ENV_KEY = 'CONTACT_EMAIL';
+
+    private const DEFAULT_EMAIL = 'info@bijedith.nl';
+
+    private const EMAIL = 'contact@bijedith.nl';
+
     protected function tearDown(): void
     {
         putenv(self::ENV_KEY);
+        putenv(self::EMAIL_ENV_KEY);
 
         parent::tearDown();
     }
@@ -53,5 +60,21 @@ class ContactConfigTest extends TestCase
         $config = $this->loadConfig();
 
         $this->assertSame(self::INTERNATIONAL_PHONE_LINK, $config['phone_link']);
+    }
+
+    public function testEmailFallsBackToTheDefaultWhenNoAddressIsConfigured()
+    {
+        $config = $this->loadConfig();
+
+        $this->assertSame(self::DEFAULT_EMAIL, $config['email']);
+    }
+
+    public function testEmailReflectsTheConfiguredEnvironmentValue()
+    {
+        putenv(self::EMAIL_ENV_KEY . '=' . self::EMAIL);
+
+        $config = $this->loadConfig();
+
+        $this->assertSame(self::EMAIL, $config['email']);
     }
 }

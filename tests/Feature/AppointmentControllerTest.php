@@ -79,7 +79,7 @@ class AppointmentControllerTest extends TestCase
 
         $response = $this->post('/mail/appointment', $this->validPayload(['name' => '']));
 
-        $response->assertSessionHasErrors(['name']);
+        $response->assertSessionHasErrors(['name' => 'Het naam veld is verplicht.']);
         Mail::assertNothingSent();
         $this->assertSame(0, Appointment::count());
     }
@@ -142,7 +142,7 @@ class AppointmentControllerTest extends TestCase
 
         $response = $this->post('/mail/appointment', $this->validPayload(['procedure' => 'massage']));
 
-        $response->assertSessionHasErrors(['procedure']);
+        $response->assertSessionHasErrors(['procedure' => 'Het geselecteerde behandeling is ongeldig.']);
         Mail::assertNothingSent();
     }
 

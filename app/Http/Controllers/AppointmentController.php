@@ -42,7 +42,7 @@ class AppointmentController extends Controller
 
         try {
             Mail::to($appointment->email)->send($confirmationMail);
-            Mail::to('info@bijedith.nl')->send($mail);
+            Mail::to(config('contact.email'))->send($mail);
         } catch (Throwable $exception) {
             Log::error('Failed to send appointment mail.', [
                 'appointment_id' => $appointment->id,

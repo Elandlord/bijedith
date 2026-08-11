@@ -27,7 +27,7 @@
                     @endif
                     <div>
                         <dt class="font-semibold text-gray-900">E-mail</dt>
-                        <dd class="mt-1"><a class="text-brand-700 transition hover:text-brand-800" href="mailto:info@bijedith.nl">info@bijedith.nl</a></dd>
+                        <dd class="mt-1"><a class="text-brand-700 transition hover:text-brand-800" href="mailto:{{ config('contact.email') }}">{{ config('contact.email') }}</a></dd>
                     </div>
                 </dl>
                 <div class="mt-8">

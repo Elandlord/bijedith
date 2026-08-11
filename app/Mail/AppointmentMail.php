@@ -39,7 +39,7 @@ class AppointmentMail extends Mailable
     public function build()
     {
         return $this
-            ->from('info@bijedith.nl')
+            ->from(config('contact.email'))
             ->replyTo($this->email, $this->name)
             ->subject('Nieuwe aanvraag voor behandeling')
             ->markdown('mails.appointment');

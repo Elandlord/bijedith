@@ -151,8 +151,8 @@ return [
         'email' => 'e-mailadres',
         'procedure' => 'behandeling',
         'phone' => 'telefoonnummer',
-        'message' => 'opmerking',
-        'opt_in' => 'akkoord met de privacyverklaring',
+        'message' => 'bericht',
+        'opt_in' => 'akkoord',
     ],
 
 ];

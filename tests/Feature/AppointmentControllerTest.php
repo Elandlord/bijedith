@@ -84,6 +84,18 @@ class AppointmentControllerTest extends TestCase
         $this->assertSame(0, Appointment::count());
     }
 
+    public function testMissingNameValidationMessageIsInDutch()
+    {
+        Mail::fake();
+
+        $response = $this->post('/mail/appointment', $this->validPayload(['name' => '']));
+
+        $response->assertSessionHasErrors(['name']);
+        $message = session('errors')->first('name');
+        $this->assertStringNotContainsString('field is required', $message);
+        $this->assertStringContainsString('naam is verplicht', $message);
+    }
+
     public function testMissingEmailFailsValidation()
     {
         Mail::fake();
@@ -131,6 +143,16 @@ class AppointmentControllerTest extends TestCase
         $response = $this->post('/mail/appointment', $this->validPayload(['procedure' => 'massage']));
 
         $response->assertSessionHasErrors(['procedure' => 'Het geselecteerde behandeling is ongeldig.']);
+        Mail::assertNothingSent();
+    }
+
+    public function testNonNumericPhoneFailsValidation()
+    {
+        Mail::fake();
+
+        $response = $this->post('/mail/appointment', $this->validPayload(['phone' => 'abcdefghij']));
+
+        $response->assertSessionHasErrors(['phone']);
         Mail::assertNothingSent();
     }
 

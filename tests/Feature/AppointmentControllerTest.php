@@ -134,6 +134,16 @@ class AppointmentControllerTest extends TestCase
         Mail::assertNothingSent();
     }
 
+    public function testNonNumericPhoneFailsValidation()
+    {
+        Mail::fake();
+
+        $response = $this->post('/mail/appointment', $this->validPayload(['phone' => 'abcdefghij']));
+
+        $response->assertSessionHasErrors(['phone']);
+        Mail::assertNothingSent();
+    }
+
     public function testProcedureAcceptsAnExistingTreatmentName()
     {
         Mail::fake();

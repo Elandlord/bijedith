@@ -39,7 +39,7 @@ class AppointmentRequest extends FormRequest
             'name'          => 'required|min:2|max:50',
             'email'         => 'required|email|min:5|max:100',
             'procedure'     => ['required', Rule::in($procedures)],
-            'phone'         => 'required|min:5|max:25',
+            'phone'         => 'required|min:5|max:25|regex:/^[0-9+\-\s()]+$/',
             'message'       => 'nullable|max:350',
             'opt_in'        => 'required|accepted',
         ];

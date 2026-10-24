@@ -89,7 +89,7 @@ export default {
         this.startAutoplay();
     },
 
-    beforeDestroy() {
+    beforeUnmount() {
         this.stopAutoplay();
         window.removeEventListener("resize", this.setItemsPerView);
     },

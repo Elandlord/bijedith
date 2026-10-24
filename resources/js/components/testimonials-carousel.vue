@@ -55,7 +55,7 @@ export default {
         this.startAutoplay();
     },
 
-    beforeDestroy() {
+    beforeUnmount() {
         this.stopAutoplay();
     },
 

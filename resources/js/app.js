@@ -6,7 +6,7 @@
 
 require("./bootstrap");
 
-import Vue from "vue";
+import { createApp } from "vue";
 import "lazysizes";
 
 window.toastr = require("toastr");
@@ -18,11 +18,13 @@ window.toastr = require("toastr");
  *
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
  */
+const app = createApp({});
+
 const files = require.context("./", true, /\.vue$/i);
 files
     .keys()
     .map((key) =>
-        Vue.component(key.split("/").pop().split(".")[0], files(key).default)
+        app.component(key.split("/").pop().split(".")[0], files(key).default)
     );
 
 /**
@@ -31,9 +33,7 @@ files
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-const app = new Vue({
-    el: "#app",
-});
+app.mount("#app");
 
 const scrollObserver = new IntersectionObserver(
     (entries) => {

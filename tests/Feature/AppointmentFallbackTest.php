@@ -38,6 +38,7 @@ class AppointmentFallbackTest extends TestCase
         $response = $this->get('/');
 
         $response->assertSee('onerror="window.salonizedWidgetFailed()"', false);
+        $response->assertSee('iframe[src^="https://widget.salonized.com/"]', false);
         $response->assertSee('[data-booking-fallback][hidden] { display: block !important; }', false);
     }
 

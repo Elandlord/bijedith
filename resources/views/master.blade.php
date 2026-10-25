@@ -52,6 +52,10 @@
         var revealed = false;
 
         function widgetHasRendered() {
+            if (document.querySelector('iframe[src^="https://widget.salonized.com/"]')) {
+                return true;
+            }
+
             var widget = document.querySelector('.salonized-booking');
 
             return !!widget && widget.children.length > 0;

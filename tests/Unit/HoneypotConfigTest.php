@@ -10,7 +10,7 @@ class HoneypotConfigTest extends TestCase
 
     private const DEFAULT_SECONDS = 1;
 
-    private const OVERRIDE_SECONDS = '5';
+    private const OVERRIDE_SECONDS = 5;
 
     protected function tearDown(): void
     {
